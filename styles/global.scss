@@ -285,6 +285,14 @@ div#titleContainer {
     margin-top: 0;
     margin-bottom: 0;
   }
+  &.talk {
+    flex-direction: column;
+    align-items: stretch;
+    #publishedAt {
+      text-align: right;
+      margin-top: 0.75em;
+    }
+  }
 }
 div#publishedAt {
   line-height: 1.1em;

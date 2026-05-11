@@ -144,7 +144,7 @@ const Wrapper: React.FC<
       <Header />
       <main className="responsive paddings">
         {!noTitle && (
-          <div id="titleContainer">
+          <div id="titleContainer" className={isTalk ? "talk" : undefined}>
             <div style={{ flex: 1 }}>
               <h1>{title}</h1>
               {technical && <span className="technical">(Technical)</span>}
