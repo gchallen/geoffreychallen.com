@@ -63,7 +63,7 @@ const config = {
       },
       {
         source: "/talks/2026-05-12",
-        destination: "/talks/2026-05-12-the-new-computing",
+        destination: "/talks/2026-05-12-the-new-computing-education-in-the-ai-era",
         permanent: false,
       },
       // Redirects from old title-based slugs
