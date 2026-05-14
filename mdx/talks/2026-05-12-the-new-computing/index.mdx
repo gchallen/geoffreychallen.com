@@ -7,6 +7,12 @@ description: >
   Georgia Tech.
 published: 2026-05-12
 audience: Georgia Tech School of Computing Instruction
+topics:
+  - AI in education
+  - CS education
+  - curriculum design
+  - assessment
+  - conversational programming
 ---
 
 ## Abstract
@@ -16,3 +22,63 @@ AI is transforming computing, education, and society. As computing educators, we
 I am taking up this challenge in my own teaching. At the assignment level, I am redesigning [CS1](https://learncs.online) to incorporate an independent project allowing students to learn and collaborate with AI. At the course level, I am developing two new classes for a general audience: [using and understanding AI](https://usingandunderstanding.ai) and conversational programming. At the program level, I am designing a new Applied Computing degree representing a holistic vision of the new computing—interdisciplinary, design-focused, AI-enabled.
 
 SCI can prepare every graduate to play a leading role in determining how AI is built, used, and governed. Realizing this vision calls for team-building leadership that creates an environment where faculty explore together, support each other, and set the standard for other institutions.
+
+## Summary
+
+A vision talk delivered as part of the search for Chair of the School of Computing Instruction at Georgia Tech. The talk argues that AI's emergence creates both an opportunity and a responsibility for computing educators—to redesign assessments, courses, and degrees so that graduates can shape the AI era. It walks through three concrete steps already underway: a Spring 2026 redesign of CS 124 around independent student-driven projects with time-on-AI grading; Using and Understanding AI, a new course for non-technical students built entirely through conversational programming; and a draft Applied Computing undergraduate degree inspired by architectural pedagogy. It closes on the role of educators—and on SCI specifically as the team uniquely positioned to lead through this moment.
+
+## History Rhymes
+
+The opening reads five quotes from computing pioneers without attribution. They sound like they could have been said yesterday. They weren't. Grace Hopper on programming in plain language. Joseph Weizenbaum on what we don't know how to give machines. J.C.R. Licklider on translating natural-language goals into procedures. Edsger Dijkstra on a high-level language mutilating the minds of students learning to program. John Kemeny on millions of people writing their own software. 1955 to 1975.
+
+The hope-and-fear cycle is older than the technology. We have been here before, every time computing has moved closer to ordinary people. Compilers, BASIC, the personal computer, the web—each arrival came with its champions and its mourners. Every time, we worked through the uncertain middle. We will this time too. The rest of the talk is a few first steps I've taken—not predictions about how it ends, but moves I can show you.
+
+## Assessments
+
+I have taught introductory computing at the University of Illinois since 2017. The traditional model: write a specification, hand it to students, they translate it into code, I grade the code against the spec. In July 2025, with Claude Code, I sat down with the multi-week Android assignment we give CS 124 students and watched, with only the test suites in hand—not even the prose specification—as Claude completed the entire thing in an hour. The shape of assignment we have used for decades broke that afternoon.
+
+We tried a partial fix in Fall 2025: blur the spec, give students less to hand to AI. It failed. The information students need to fairly complete an assignment is enough information for AI to complete it too, and students reported they didn't learn much. So this spring, we went back to the drawing board.
+
+In Spring 2026, every one of ~400 CS 124 students designed and built their own Android app with Claude Code. The hard part of working with a coding agent isn't generating code—it's getting the idea out of your head into a specification the agent can follow. The course scaffolds that work: the first half is design, ideation, peer feedback, and brainstorming with Claude about feasibility; the second half is structured building sessions. Different students choose different scopes—about half finish their MVP and then go on to a series of additional tasks they pick with their project mentor.
+
+Because no two projects are the same, we grade for effort, not progress. We instrument students' Claude sessions, use AI itself to distinguish substantive engagement from off-task chatter, and target an average of four hours per week over six weeks. That collapses an effort distribution that used to vary wildly—one student stuck on a nasty bug, another getting a lot of help—into something fair. Everyone starts in a different place; everyone makes roughly the same amount of progress through a much bigger idea space.
+
+This coexists with rigorous assessment of classical programming. CS 124 still has 15 hours of proctored assessment per semester in our computer-based testing facility, a large bank of problems, debugging exercises, solution-based autograding, and frequent small assessment with rolling retakes. The pre-AI pedagogy that worked still works. What we don't yet know is what the right balance between classical fundamentals and agentic development should be—or what specifically makes someone a good AI collaborator. That, I think, is the most important open question in the computing education field right now.
+
+## Courses: Using and Understanding AI
+
+This semester I launched a new course on exploring generative AI for non-technical students, designed to work as a general-education entry point into AI literacy. The pilot is small and intentional. The experiment isn't only what to teach—it's how many places in the course's content, infrastructure, and operations I could let AI in.
+
+The course infrastructure was built entirely through [conversational programming](https://conversationalprogramming.ai). I did not manually read, write, or debug a single line of the code that powers [the site](https://usingandunderstanding.ai). After a decade hand-building CS 124's infrastructure, the contrast was striking. The full transcript of how the course site was built is online if you want to watch me get frustrated and proud in turns.
+
+We meet twice a week. Inductive sessions use interactive artifacts—a digit-recognition CNN students can train in the browser before we ever name the mechanism. Discussion sections use AI-supported conversational preparation: students arrive having already worked through the readings in conversation with an agent, so the human-to-human conversation in the room starts on common ground. Labs use AI to build things.
+
+The piece I am most excited about pedagogically is conversational assessment—the chat-based equivalent of an oral exam, scaled. A multi-agent system: an interviewer agent talks with the student, an evaluator agent watches the rubric, and the two coordinate. We validated it against adversarial personas. The hardest to defeat was the confident bullshitter.
+
+Conversational assessment matters because the value of feedback falls off with delay. Tight feedback loops keep students inside the window where feedback still changes behavior. AI lets us autograde the open-ended work that used to demand slow human evaluation—and we can place that assessment inside the CBTF, proctored, on a computer, with AI integrated rather than excluded.
+
+Several students kept building beyond the course. One built a full-stack replacement for the apps her sorority pays for. Another, an aquascaper, built a tool for tracking tanks, livestock, plants, water chemistry, and maintenance—a domain I had never heard of before this semester. With Cory Gwin at GitHub I am planning a Fall 2026 pilot of Conversational Programming, a course for non-technical students with no code to read or debug, focused on building, evaluating, and iterating on what they make.
+
+## Degrees: Applied Computing
+
+Through a series of faculty discussions at Illinois about how our programs should change, two populations have come into focus. Some students want to understand computing—the theory, the internals, the depth. Some want to use computing to solve problems in the world. Not categories. Dimensions. Most students mix. CS degrees today serve the first population well, the second only obliquely.
+
+Applied Computing is a draft proposal for an undergraduate degree built for the second population. It's early; the working document is online and feedback is genuinely welcome.
+
+The core leans on conversational programming first, classical programming later. Six courses across the first two years: Conversational Programming and Computing in Culture (Y1 Fall), Agentic Software Development (Y1 Spring), AI Models and Agents and Integrative Design Studio I (Y2 Fall), How Software Works (Y2 Spring). The order is deliberate—fluency first, then the move backward to reason about the systems underneath.
+
+Outside the core, three pillars: a domain concentration via any existing minor, formation through writing, literature, moral reasoning, studio art, and a studio progression with a public capstone defense. Much of this is borrowed from architectural pedagogy—students build, critique, iterate, and validate, repeatedly, in front of peers and the public. Entrepreneurship has the same shape: iterative work, public defense, real users.
+
+The section closes on Stewart Brand. In 1968, *Whole Earth Catalog*: "we are as gods, we might as well get good at it." In 2009, he updated the verb: "have to get good at it." Twenty-six years later, we are handing students tools more powerful than anything Brand had in mind. The verb shifts again. We have a particular responsibility for what they build.
+
+## Educators
+
+For a decade, computing education has been in one-to-n mode—scaling what we already know how to teach. AI puts us back into zero-to-one mode. We have to figure things out: through experimentation, through collaboration with computing-education researchers, and most of all by learning from each other.
+
+Students need us. The sentiment analysis I ran on r/gatech for this talk showed students worrying about the job market, about AI, about honor-code anxiety. They are looking for our voice—and our voice is conspicuously absent. They want to see us understanding what they are going through, learning these tools ourselves, and updating our curricula for the present they are already in.
+
+There is a divergence to navigate too. For curious students, AI is fantastic—a 24/7 tutor willing to talk about Aristotle's notion of friendship at 6:30 in the morning or race conditions over lunch. For students with intrinsic motivation, AI is a multiplier. For students without it, AI just does the homework. We spend a lot of time asking what students are doing with AI. We should spend more time asking what AI can do with students—how it can build fires of curiosity that the rest of the education then has something to work with.
+
+The team I want to be part of has shared goals, communication and visibility, and community and connection. Shared goals because this is not a zero-sum game—your course getting better and mine getting better are the same outcome for the students who take both. Visibility because we will not navigate this moment without seeing what each other is doing, sharing material, talking constantly. Community because COVID pushed us apart and AI risks pushing us further apart still—online conversations can now be entirely synthetic. If we want human connection, we have to do it face to face, in spaces students want to be.
+
+SCI is a unique structure: a school of computing educators, a team already assembled, in a position to lead. I am here because I want to join your team.
