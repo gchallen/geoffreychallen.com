@@ -1,7 +1,7 @@
 [
   {
     "topic": "CS education",
-    "count": 31
+    "count": 32
   },
   {
     "topic": "CS1",
@@ -17,6 +17,10 @@
   },
   {
     "topic": "assessment",
+    "count": 6
+  },
+  {
+    "topic": "AI in education",
     "count": 5
   },
   {
@@ -37,10 +41,6 @@
   },
   {
     "topic": "academic jobs",
-    "count": 4
-  },
-  {
-    "topic": "AI in education",
     "count": 4
   },
   {
@@ -180,6 +180,10 @@
     "count": 1
   },
   {
+    "topic": "conversational programming",
+    "count": 1
+  },
+  {
     "topic": "course forums",
     "count": 1
   },
@@ -193,6 +197,10 @@
   },
   {
     "topic": "curriculum",
+    "count": 1
+  },
+  {
+    "topic": "curriculum design",
     "count": 1
   },
   {
