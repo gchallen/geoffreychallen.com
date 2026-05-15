@@ -1,0 +1,88 @@
+---
+title: "The New Computing"
+description: >
+  A 20-minute lightning talk opening Day 0 of the GitHub Education Educator
+  Summit, walking through two Spring 2026 curriculum redesigns: an
+  assignment-level redesign of CS 124 around independent AI-collaborative
+  student projects, and a new course on AI literacy built entirely through
+  conversational programming.
+published: 2026-06-09
+unlisted: true
+audience: GitHub Education Educator Summit (Day 0, in person at GitHub HQ)
+topics:
+  - AI in education
+  - CS education
+  - curriculum design
+  - assessment
+  - conversational programming
+---
+
+> **Draft note.** This page is unlisted while the talk takes shape. The
+> sections below labelled *Framing* and *Open questions* — and the inline
+> draft notes throughout — are working material for collaborators and will
+> be removed before the page goes public.
+
+## Abstract
+
+A 20-minute lightning talk opening the GitHub Education Educator Summit's Day 0 *Changing Curriculum* workshop. Two worked examples from Spring 2026: an assignment-level redesign of CS 124 around independent, AI-collaborative student projects with time-on-AI grading; and Using and Understanding AI, a new course for non-technical students built entirely through conversational programming, anchored by multi-agent conversational assessment. Both are arguments for the same shape — let AI in deliberately, redesign the work around what only the student can do, and grade engagement instead of artifact.
+
+## Framing
+
+This talk is meant to seed an afternoon workshop, not stand alone. The audience is a room of CS educators — mostly making course-level and assignment-level decisions, not program-level ones — about to spend several hours in a hands-on curriculum-redesign workshop. The goal of the lightning talk is to give them concrete, replicable evidence at two scales that can become starting material for the work that follows.
+
+**Goals.** Show what redesign actually looks like in practice. Argue for one consistent shape across both worked examples: let AI in deliberately, redesign the work around what only the student can do, grade engagement instead of artifact. Hand off to the workshop with the open question that the rest of the summit picks up — *what is the right balance between classical fundamentals and agentic development, and what specifically makes someone a good AI collaborator?*
+
+**Shape (~20 min).**
+
+| Section | Time | What it does |
+|---|---|---|
+| Opening — History rhymes | ~3 min | Hope/fear in computing education is older than the technology |
+| Assessments — CS 124 redesign | ~8 min | Assignment-level: what broke, what we tried, what worked |
+| Courses — Using and Understanding AI | ~7 min | Course-level: worked example, anchored by conversational assessment |
+| Close — hand-off to workshop | ~1 min | Direct: here's the question I'd push you to start with |
+
+Each section is one consistent move applied at a different scale, so a single argument lands twice.
+
+**What this draft does not include.** Program-level redesign — what an entire degree could look like — is cut for this format; it asks more from a twenty-minute slot than a twenty-minute slot can return, and most of the room isn't in a position to redesign whole programs anyway. That material lives in *[The New Computing](/talks/2026-05-12-the-new-computing)* and is better suited to venues where program redesign is actually on the table. The GT-specific *Educators / "join my team"* close is also cut as it doesn't generalize.
+
+**What could be folded in.** Stewart Brand's *"we are as gods"* → *"have to get good at it"* verb change as a close on educator responsibility. GitHub-specific data on how students are actually using AI in classrooms. A sentiment analysis of student forum discussion through early 2026 showing real anxiety around jobs, AI, and academic honesty. A deeper preview of the Fall 2026 *Conversational Programming* course. Any of these could replace or extend the close depending on time and audience.
+
+## History rhymes
+
+The opening reads five quotes from computing pioneers without attribution. Grace Hopper on programming in plain language. Joseph Weizenbaum on what we don't know how to give machines. J.C.R. Licklider on translating natural-language goals into procedures. Edsger Dijkstra on a high-level language mutilating the minds of students learning to program. John Kemeny on millions of people writing their own software. 1955 to 1975. The hope-and-fear cycle is older than the technology. We have always worked through the uncertain middle. The rest of the talk is two concrete first steps.
+
+> **Draft note.** If time is tight, drop one or two of the five quotes; keep the timeline reveal as the payoff.
+
+## Assignments: CS 124 in Spring 2026
+
+The shape of a programming assignment has been broken for a year. The multi-week Android assignment we had been giving introductory CS students at Illinois was, in July 2025, completable by Claude Code in an hour with only the test suite in hand. A Fall 2025 partial fix — blur the spec, give students less to hand to AI — failed; the spec is the part students need to do the work fairly, and that same information is enough for AI.
+
+In Spring 2026, ~400 CS 124 students each designed and built their own Android app in collaboration with Claude Code. The first half of the project is ideation, peer feedback, and brainstorming feasibility in conversation with Claude. The second half is structured building sessions. Seven weeks of design work precede the first line of implementation code. Because no two projects are the same, we grade for time on AI — instrumented from session logs, with AI itself distinguishing substantive engagement from off-task chatter. Classical programming fundamentals stay rigorous in parallel — 15 hours of proctored testing per semester in the Illinois CBTF, mastery learning, frequent small assessment with rolling retakes — alongside the project-based work.
+
+The honest punchline: we still don't know what the right balance between classical fundamentals and agentic development should be. That is the open question — and it's the question Day 2 picks up.
+
+> **Draft note — beats.** Spec broken (July 2025 Claude demo) → Fall 2025 blurred-spec failure (with student quotes) → Spring 2026 redesign (idea pipeline, weekly agentic activities, time-on-AI grading) → classical fundamentals coexist in the CBTF → the open question.
+
+## Courses: Using and Understanding AI
+
+Launched this semester for non-technical students. No prerequisites, no code, AI literacy as general education. The course infrastructure was built entirely through conversational programming — not a single line manually read, written, or debugged — across 199 sessions, 4,038 turns, and 29,770 tool calls. The build is documented at <https://usingandunderstanding.ai/create>.
+
+The pedagogical move is to let AI in everywhere it removes a barrier: inductive sessions with interactive artifacts students play with before we name the mechanism; AI-supported preparation so human-to-human conversation in the room starts on common ground; conversational assessment as the chat-based equivalent of an oral exam — multi-agent, scored against a rubric, validated against adversarial personas (the hardest to defeat was the confident bullshitter). The same recipe — an evaluator agent scored against a rubric — collapses any slow human feedback loop into many fast ones, anywhere it appears.
+
+Several students kept building beyond the course: one replaced apps her sorority pays for; another, an aquascaper, built a tracker for tanks, livestock, plants, water chemistry, and maintenance — a domain I had never heard of before this semester.
+
+> **Draft note — beats.** Course goals (non-technical audience, AI literacy as gen-ed) → built entirely through conversational programming → pedagogical design (inductive artifacts, AI-supported prep, AI-built labs) → conversational assessment (multi-agent, adversarial validation) → the pattern generalizes to any slow feedback loop → final projects that kept going. If pressed for time, drop one of the inductive-exploration deep dives; keep the conversational-assessment story.
+
+## What's next
+
+The Day 2 *Curriculum Overhaul* session, co-presented with Cory Gwin and Leo Porter, picks up the open question this lightning talk leaves on the table: what is the right balance between classical programming fundamentals and agentic development, and what specifically makes someone a good AI collaborator? That, in my view, is the most important open question in computing education right now.
+
+## Open questions
+
+> **Draft note.** This section is for collaborators reading the unlisted draft and will be removed before the page goes public.
+
+A few specific places where outside input would sharpen the talk:
+
+1. **What to cut from, or add back to, the deliberately-cut material.** I've removed program-level redesign and the GT-specific *Educators* close. Anything you've seen land or fail with similar audiences that argues for or against those cuts?
+2. **A stronger close.** Brand's verb change is the current candidate. A GitHub-specific signal — a number, a story, or a sentiment from across the educator community — could land harder if one is available.
+3. **The Day 2 hand-off.** This lightning talk ends on the open question that the *Curriculum Overhaul* session is meant to take up. Which parts of the Day 0 workshop synthesis should we commit to dragging into Day 2 now, before we're in the room together?
