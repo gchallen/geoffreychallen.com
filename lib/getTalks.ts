@@ -9,6 +9,7 @@ export interface Talk {
   url: string
   audience: string
   slidesUrl: string
+  unlisted?: boolean
 }
 
 export async function getTalks(): Promise<Talk[]> {
@@ -17,9 +18,12 @@ export async function getTalks(): Promise<Talk[]> {
       .map((file) => fs.readFile(file))
       .map(async (content) => JSON.parse((await content).toString())),
   ).then((talks) =>
-    talks.sort(
-      (b: any, a: any) => new Date(a.published ?? new Date()).valueOf() - new Date(b.published ?? new Date()).valueOf(),
-    ),
+    talks
+      .filter((talk: any) => !talk.unlisted)
+      .sort(
+        (b: any, a: any) =>
+          new Date(a.published ?? new Date()).valueOf() - new Date(b.published ?? new Date()).valueOf(),
+      ),
   )
   return talks
 }
