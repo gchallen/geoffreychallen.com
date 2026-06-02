@@ -1,3 +1,6 @@
 [submodule "docs"]
-	path = docs
+	path = externals/docs
 	url = git@github.com:gchallen/docs.git
+[submodule "externals/blue-systems-group"]
+	path = externals/blue-systems-group
+	url = git@github.com:blue-systems-group/www.git

@@ -1,0 +1,112 @@
+<!--
+National Innovation Visa (subclass 858) — Expression of Interest CV
+Target length: 4 pages. Education-innovation-led positioning.
+Items to confirm with current figures before submission are tracked in
+cv/eoi-evidence-checklist.md (citation metrics, CAREER award amount, total-student count).
+Convert to PDF, e.g.:  pandoc cv/niv-eoi-CV.md -o niv-eoi-CV.pdf
+-->
+
+# Geoffrey Challen
+
+**Teaching Professor, Department of Computer Science, University of Illinois Urbana-Champaign**
+né Werner-Allen · Ph.D. Computer Science (Harvard)
+
+challen@illinois.edu · https://geoffreychallen.com · Google Scholar: https://geoffreychallen.com/scholar
+Public course materials: https://learncs.online · Course: https://cs124.org · Prior research group: https://bluegroup.systems
+
+---
+
+## Profile
+
+I am an internationally recognized computer science educator and educational-technology researcher whose work has changed how introductory computing is taught at scale, combined with an earlier, internationally cited record in mobile and sensor-network systems research. I build the software infrastructure behind my teaching, publish it as open resources used by learners and instructors worldwide, and have won my university's and college's highest undergraduate-teaching honors. Over my career I have taught more than 16,000 students, supervised 47 graduate and undergraduate researchers, won almost $3M in competitive external research funding, and accumulated more than 6,500 citations to my published work. My field—computing education and the tools that support it—is practiced and recognized internationally, and my contributions to it are openly available and demonstrably adopted beyond my own institution and country.
+
+---
+
+## Education Innovation and Impact _(primary field)_
+
+**Transformed CS1 at one of the world's leading computer science programs.** Since 2017 I have redesigned and led [CS 124](https://cs124.org), the introductory programming course at the University of Illinois (consistently ranked among the top five CS departments worldwide). The course now enrolls **over 2,000 students per year** (≈80% non-majors). Since I took it over, enrollment has doubled, drop rates have fallen, success rates have risen, performance in later courses has improved, and a gender performance gap has disappeared.
+
+**Built and openly released the infrastructure behind it, with international reach.** I personally engineer the systems that make interactive computing education work at scale, and publish them as free and open resources:
+
+- **[learncs.online](https://learncs.online)** — a freely available version of my CS1 course: 61 daily lessons in Java and Kotlin, 902 runnable code playgrounds, **2,540 interactive walkthroughs contributed by 264 instructors**, and 700+ autograded programming problems. In its first year it supported **thousands of independent learners worldwide**, who generated **hundreds of thousands of homework submissions**. It is adopted beyond Illinois—used by Ellen Spertus at Northeastern University for her Kotlin course, and as the interactive textbook for a high-school outreach program through Chicago's Discovery Partners Institute.
+- **[Jeed](https://jeed.run)** — an open-source toolkit that executes untrusted Java/Kotlin code in a secure sandbox **1000× faster** than container-based alternatives, in production since 2019 and used by other educators.
+- **[Questioner](https://github.com/cs124-illinois/questioner)** — a novel solution-driven authoring system that generates and validates autograders, producing accurate programming exercises an **order of magnitude faster** than prior approaches; being released for broader use at beyondgrader.com.
+- **[ops-class.org](https://ops-class.org)** and **[internet-class.org](https://www.internet-class.org)** — open course frameworks (operating systems; how the internet works), including the `test161` autograder and hundreds of hours of openly available lecture video.
+
+**Pioneering computing education for the AI era.** I have redesigned CS 124 around AI coding agents, built a novel **two-agent conversational AI assessment** system, created new courses for non-technical students ([Using and Understanding AI](https://www.usingandunderstanding.ai/); Conversational Programming), and am leading the design of a new **Applied Computing** undergraduate degree spanning four schools at Illinois.
+
+**Recognized leadership in the field.** Publications at **SIGCSE** (the premier international CS-education venue) in 2024 and 2025; an **invited keynote** at the Western Canadian Conference on Computing Education (2022); co-founder of the Illinois Computer Science Summer Teaching Workshop (now in its fifth year); and an active member since 2021 of an international community of practice of 100+ CS educators from dozens of institutions worldwide.
+
+---
+
+## Research Record _(evidence of international standing)_
+
+From 2011–2017 I was a tenure-track Assistant Professor at the University at Buffalo, leading the **blue Systems Group** in mobile-systems research; my Ph.D. work at Harvard (2004–2010) helped establish the field of wireless sensor networks.
+
+- **More than 6,500 citations; h-index 19** (Google Scholar), spanning mobile systems and sensor networks.
+- Publications in the **top international venues** in the field: OSDI, SenSys, MobiSys, UbiComp, INFOCOM, IPSN, HotOS, and HotMobile.
+- **Best Paper Award**, Runtime Verification (RV'16); **Best Poster Award**, HotMobile'14.
+- Led **PhoneLab**, an NSF-funded public smartphone testbed (≈150 participants) used by researchers internationally.
+- Foundational sensor-network work, including deploying wireless sensor networks on **active volcanoes** (OSDI'06) and the widely used **MoteLab** testbed (IPSN'05).
+- **International and industry collaborations**: CSIRO (Australia), TU Darmstadt (Germany), Microsoft Research, and AT&T Labs Research; co-editor of a Springer volume on wireless sensor networks (2010).
+
+---
+
+## Honors and Awards
+
+- **2026** — Rose Award for Teaching Excellence, The Grainger College of Engineering, University of Illinois
+- **2026** — Scott H. Fisher Computer Science Teaching Award (the Siebel School's top undergraduate-teaching honor)
+- **2017** — National Science Foundation **CAREER Award**
+- **2015** — SEAS Early Career Teacher of the Year, University at Buffalo
+- **2009** — Siebel Scholar
+
+---
+
+## Selected Publications
+
+_Computer science education_
+
+- Y. Zhou, L. Paquette, **G. Challen**. _Investigating the Presence and Development of Student Instructor Preferences in a Large-Scale CS1 Course._ SIGCSE 2025.
+- **G. Challen**, B. Nordick. _Accelerating Accurate Assignment Authoring Using Solution-Generated Autograders._ SIGCSE 2025.
+- H. Chen, A. Li, **G. Challen**, K. Cunningham. _Implementation of Split Deadlines in a Large CS1 Course._ SIGCSE 2024.
+
+_Mobile systems and sensor networks_
+
+- J. Shi, S. Lahiri, R. Chandra, **G. Challen**. _Wireless Protocol Validation Under Uncertainty._ Formal Methods in System Design, 2017 _(journal version of RV'16 Best Paper)_.
+- A. Nandugudi, T. Ki, C. Nuessle, **G. Challen**. _PocketParker: Pocketsourcing Parking Lot Availability._ UbiComp 2014.
+- K. Lorincz, B. Chen, **G. Challen**, et al. _Mercury: A Wearable Sensor Network Platform for High-Fidelity Motion Analysis._ SenSys 2009.
+- **G. Werner-Allen**, K. Lorincz, J. Johnson, J. Lees, M. Welsh. _Fidelity and Yield in a Volcano Monitoring Sensor Network._ OSDI 2006.
+- **G. Werner-Allen**, P. Swieskowski, M. Welsh. _MoteLab: A Wireless Sensor Network Testbed._ IPSN 2005.
+
+_A full publication list (40+ peer-reviewed papers) is available on Google Scholar and at https://bluegroup.systems/papers._
+
+---
+
+## Research Funding
+
+Almost **$3M in competitive external funding** across my career, primarily from the National Science Foundation and Google, most as PI. Selected awards:
+
+- **NSF CAREER**: Harnessing Implementation Flexibility to Enable Runtime Adaptation, $525,582 (2017), sole PI.
+- **NSF**: PhoneLab — a Programmable Participatory Smartphone Testbed, $1,322,510 (PI).
+- **NSF**: Jouler — Cross-Device Application Energy Management for Smartphones, $499,185 (sole PI).
+- **NSF**: Architecture and System Support for Power-Agile Computing, $561,766 (co-PI).
+
+---
+
+## Professional Recognition and Service
+
+- **Editor**, _GetMobile_ (ACM SIGMOBILE magazine), 2015–.
+- **Program committees / reviewing** for top international venues: MobiCom, MobiSys, SenSys, IPSN, HotMobile, and others; first University at Buffalo faculty member invited to serve on several of these.
+- **Invited participant**: White House SmartAmerica Challenge (representing PhoneLab); Google Faculty Summits (2011, 2015); Visiting Researcher, IT University of Copenhagen (2010).
+- Founded and advised the University at Buffalo chapter of the **Scientista Foundation** (women in STEM) and led a delegation to the Grace Hopper Celebration.
+
+---
+
+## Appointments and Education
+
+- **2024–** Teaching Professor, University of Illinois Urbana-Champaign
+- **2017–2024** Associate Teaching Professor, University of Illinois Urbana-Champaign
+- **2011–2017** Assistant Professor, University at Buffalo
+- **2010–2011** Postdoctoral Associate, MIT (advised by Hari Balakrishnan)
+- **2010** Ph.D., Computer Science, Harvard University (advised by Matt Welsh)
+- **2003** A.B., Physics, Harvard University
