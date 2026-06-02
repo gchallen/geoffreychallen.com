@@ -2,6 +2,7 @@
 dist
 *.mdx
 output
+docs
 pages/**/*.jsx
 public/onload.js
 public/pyodide-lock.json
