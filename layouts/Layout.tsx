@@ -106,6 +106,7 @@ const Wrapper: React.FC<
       showTOC?: boolean
       toc?: TocHeading[]
       navigation?: any
+      mainClass?: string
     }
   }
 > = ({ frontmatter, children }) => {
@@ -126,6 +127,7 @@ const Wrapper: React.FC<
     showTOC,
     toc,
     navigation,
+    mainClass,
   } = frontmatter
   const actualTitle = `Geoffrey Challen : ${title}`
   return (
@@ -142,7 +144,7 @@ const Wrapper: React.FC<
         {isInterview && <meta name="robots" content="noindex, nofollow" />}
       </Head>
       <Header />
-      <main className="responsive paddings">
+      <main className={`responsive paddings${mainClass ? ` ${mainClass}` : ""}`}>
         {!noTitle && (
           <div id="titleContainer" className={isTalk ? "talk" : undefined}>
             <div style={{ flex: 1 }}>

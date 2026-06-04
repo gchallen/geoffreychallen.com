@@ -440,6 +440,50 @@ div.note {
     display: block;
   }
 }
+@media print {
+  header,
+  footer,
+  .tocSidebar {
+    display: none !important;
+  }
+}
+// Compact profile for page-budgeted CVs (e.g. the National Innovation Visa CV).
+// Opt in per page via `mainClass: cvCompact` in frontmatter.
+main.cvCompact {
+  font-size: 0.9em;
+  line-height: 1.32;
+  h1 {
+    font-size: 1.6em;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 1.15em;
+    margin-top: 0.7em;
+    margin-bottom: 0.25em;
+  }
+  p {
+    margin-top: 0.35em;
+    margin-bottom: 0.35em;
+  }
+  ul {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+  }
+  li {
+    margin-top: 0.12em;
+    margin-bottom: 0.12em;
+  }
+  @media print {
+    font-size: 14px;
+    p,
+    li {
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+  }
+}
 td {
   padding-right: 16px;
 }
