@@ -934,6 +934,19 @@ $essayNavBreakpoint: calc(#{$maxTextWidth}px + 240px + 240px + 6rem);
   }
 }
 
+.sidebarPdf {
+  margin-bottom: 1.5rem;
+  font-size: 0.95em;
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    text-decoration: none;
+    svg {
+      font-size: 0.8em;
+    }
+  }
+}
 .tableOfContents {
   font-size: 0.95em;
   line-height: 1.3;

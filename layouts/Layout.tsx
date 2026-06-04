@@ -3,6 +3,7 @@ import NextImage from "next/image"
 import Link from "next/link"
 import { PropsWithChildren } from "react"
 import { onlyText } from "react-children-utilities"
+import { FaExternalLinkAlt } from "react-icons/fa"
 import { usePopperTooltip } from "react-popper-tooltip"
 import "react-popper-tooltip/dist/styles.css"
 import Code from "../components/Code"
@@ -107,6 +108,7 @@ const Wrapper: React.FC<
       toc?: TocHeading[]
       navigation?: any
       mainClass?: string
+      pdf?: string
     }
   }
 > = ({ frontmatter, children }) => {
@@ -128,6 +130,7 @@ const Wrapper: React.FC<
     toc,
     navigation,
     mainClass,
+    pdf,
   } = frontmatter
   const actualTitle = `Geoffrey Challen : ${title}`
   return (
@@ -178,9 +181,16 @@ const Wrapper: React.FC<
         )}
         {children}
       </main>
-      {showTOC && toc && toc.length > 0 && (
+      {((showTOC && toc && toc.length > 0) || pdf) && (
         <aside className="tocSidebar">
-          <TableOfContents headings={toc} />
+          {pdf && (
+            <div className="sidebarPdf">
+              <a href={pdf} target="_blank" rel="noopener">
+                PDF <FaExternalLinkAlt />
+              </a>
+            </div>
+          )}
+          {showTOC && toc && toc.length > 0 && <TableOfContents headings={toc} />}
         </aside>
       )}
       {isEssay && navigation && (
