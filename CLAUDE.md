@@ -11,7 +11,7 @@ Personal academic website for Geoffrey Challen built with Next.js, featuring a c
 ### Core Development
 
 ```bash
-bun start           # Run dev server with MDX processing and Turbopack
+bun dev             # Run dev server with MDX processing and Turbopack (alias: bun start)
 bun build           # Full production build (MDX → Next.js → static)
 bun check           # Run all checks: depcheck, prettier, eslint, tsc
 ```

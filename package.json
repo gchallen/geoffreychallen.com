@@ -15,6 +15,7 @@
     "cv:pdf": "tsx bin/pdf.ts",
     "depcheck": "depcheck --ignores=bun,node-fetch,@types/*,prettier-plugin-*,pyodide,unist,mdast,@eslint/js,eslint-config-next",
     "deploy": "tsx scripts/deploy.ts",
+    "dev": "bun start",
     "docker:build": "docker build --build-arg VERSION=$npm_package_version --build-arg GIT_COMMIT=$(git show --no-patch --format=%h) --build-arg BUILD_DATE=`date -u +\"%Y-%m-%dT%H:%M:%SZ\"` . -t geoffreychallen/www:latest && bun docker:tag",
     "docker:push": "docker buildx build . --platform=linux/amd64,linux/arm64/v8 --tag geoffreychallen/www:latest --tag geoffreychallen/www:$npm_package_version --push",
     "docker:tag": "docker tag geoffreychallen/www:latest geoffreychallen/www:$npm_package_version",
