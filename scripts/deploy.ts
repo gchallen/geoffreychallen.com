@@ -1,4 +1,4 @@
-import { execSync } from "child_process"
+import { execSync, spawn } from "child_process"
 import { readFile, writeFile } from "fs/promises"
 import { join } from "path"
 import { createInterface } from "readline/promises"
@@ -79,6 +79,33 @@ function buildSite(): void {
   exec("esbuild --bundle onload.ts --outfile=public/onload.js")
 }
 
+// Render the CV PDFs from the just-built site so the published public/*.pdf are
+// always fresh. Done on the host (native Chromium via puppeteer) and baked into
+// the image by `COPY . .`, avoiding a Chromium install in the multi-arch image.
+// Uses --strict so an over-budget NIV CV fails the deploy rather than shipping.
+function generatePdfs(): void {
+  const PORT = 3210
+  const server = spawn(join(ROOT, "node_modules/.bin/next"), ["dev", "--turbopack", "--port", String(PORT)], {
+    cwd: ROOT,
+    stdio: "ignore",
+    detached: true,
+  })
+  try {
+    execSync("tsx bin/pdf.ts --strict", {
+      cwd: ROOT,
+      stdio: "pipe",
+      env: { ...process.env, CV_PDF_BASE_URL: `http://localhost:${PORT}` },
+    })
+  } finally {
+    // Kill the detached dev server and its process group (Turbopack workers).
+    try {
+      if (server.pid) process.kill(-server.pid, "SIGKILL")
+    } catch {
+      // already gone
+    }
+  }
+}
+
 function buildAndPushWww(): void {
   exec(
     `docker buildx build . --platform=linux/amd64,linux/arm64/v8 --tag geoffreychallen/www:latest --tag geoffreychallen/www:${version} --push`,
@@ -121,6 +148,7 @@ console.log(`\nDeploying v${version}\n`)
 
 await step("Running checks", runChecks)
 await step("Building site", buildSite)
+await step("Generating CV PDFs", generatePdfs)
 await step("Building and pushing www", buildAndPushWww)
 await step("Building and pushing rag-server", buildAndPushRag)
 await step("Updating and waiting for deployments", updateDeployments)
