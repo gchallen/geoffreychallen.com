@@ -23,6 +23,13 @@ const TARGETS: Target[] = [
   { route: "/CV-NIV", out: "public/CV-NIV.pdf", maxPages: 4, margin: "0.4in" },
 ]
 
+// Centered "page / total" footer rendered into the PDF margin by Chromium.
+// The pageNumber/totalPages spans are populated automatically by Puppeteer.
+const FOOTER_TEMPLATE =
+  '<div style="width:100%; text-align:center; font-size:8px; color:#999;">' +
+  '<span class="pageNumber"></span> / <span class="totalPages"></span>' +
+  "</div>"
+
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 
 // Navigate and wait for the MDX content to actually render. Retries until the
@@ -67,6 +74,9 @@ async function main() {
         // tightening can buy back vertical space.
         preferCSSPageSize: false,
         margin: { top: margin, right: margin, bottom: margin, left: margin },
+        displayHeaderFooter: true,
+        headerTemplate: "<div></div>",
+        footerTemplate: FOOTER_TEMPLATE,
       })
       await mkdir(path.dirname(target.out), { recursive: true })
       await writeFile(target.out, buffer)
