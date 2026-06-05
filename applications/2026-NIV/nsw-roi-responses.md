@@ -3,7 +3,7 @@
 National Innovation Visa (subclass 858), **Researcher and Academic** pathway.
 Form: https://investmentnsw.tfaforms.net/4634279
 
-**How to use:** each answer is in a copy-ready code block as **plain text** (the form boxes are plain textareas — markdown bold/italics would paste as literal characters, so they're omitted). Long boxes have a **5000-character limit** and these drafts deliberately run close to it; job-offer/engagement boxes are **255 characters**. `[BRACKETED ITEMS]` need your input or confirmation before submitting. Refresh the **Google Scholar citation count and h-index** at submission (currently 6,500+ / h-19). Character counts are noted per box; re-check after editing.
+**How to use:** each answer is in a copy-ready code block as **plain text** (the form boxes are plain textareas — markdown bold/italics would paste as literal characters, so they're omitted). Long boxes have a **5000-character limit** and these drafts deliberately run close to it; job-offer/engagement boxes are **255 characters**. `[BRACKETED ITEMS]` need your input or confirmation before submitting. Refresh the **Google Scholar citation count and h-index** at submission (8,000+ / h-22 as of June 2026). Character counts are noted per box; re-check after editing.
 
 ---
 
@@ -24,13 +24,13 @@ University of Illinois Urbana-Champaign (current). University of Sydney (incomin
 **Field 18 — Current annual income or financial position in your local currency**
 
 ```text
-[YOUR FIGURE — current USD annual salary / financial position. Only you can supply this.]
+Approximately US$180,000 per year (current academic-year salary; a 10-month US faculty appointment).
 ```
 
 **Field 19 — Summary of your professional background, key achievements, and career milestones**
 
 ```text
-I am an internationally recognised computer science educator and educational-technology researcher, with an earlier, internationally cited record in mobile and sensor-network systems research. Over my career I have taught more than 16,000 students, supervised 47 graduate and undergraduate researchers, recruited and mentored over 2,000 course staff, won almost US$3 million in competitive external research funding (most as Principal Investigator), and accumulated more than 6,500 citations to my published work (h-index 19).
+I am an internationally recognised computer science educator and educational-technology researcher, with an earlier, internationally cited record in mobile and sensor-network systems research. Over my career I have taught more than 16,000 students, supervised 47 graduate and undergraduate researchers, recruited and mentored over 2,000 course staff, won almost US$3 million in competitive external research funding (most as Principal Investigator), and accumulated more than 8,000 citations to my published work (h-index 22).
 
 Transforming computing education at scale. Since 2017 I have redesigned and led CS 124, the introductory programming course at the University of Illinois — a department consistently ranked among the top five for computer science worldwide. When I took it over in 2017 it enrolled 700 students in Java, 50% earned A-range grades, and 5% failed. By 2024 it offered both Java and Kotlin, enrolment had grown past 1,200 per term (over 2,000 students per year, roughly 80% non-majors), 80% earned A-range grades, and only 2.5% failed — while rigour rose, not fell. In 2017 students wrote code in a proctored setting exactly once, on a paper final; today they complete multiple autograded programming challenges every week in a computer-based testing facility, which makes up the majority of their grade. Performance gaps between genders, between majors and non-majors, and between students with more and less prior experience have closed or disappeared.
 
@@ -120,13 +120,13 @@ From May 2027 I will hold the academic rank of Associate Professor (Level D) at 
 ```text
 Disciplinary note for assessors: in computer science, the most selective and prestigious peer-reviewed venues are top international conferences (acceptance rates commonly 15–25%), which carry greater weight than journals. The examples named in this question (Nature, The Lancet, Acta Numerica) are flagship journals in other disciplines; the equivalent venues in my fields are conferences such as OSDI, SenSys, MobiSys, and SIGCSE, in all of which I have published. My record spans two areas: computer science education, and mobile/sensor-network systems.
 
-Metrics: more than 6,500 citations; h-index 19 (Google Scholar) [refresh both figures at submission]. Google Scholar profile: https://geoffreychallen.com/scholar. Over 40 peer-reviewed publications in total; a complete list is at https://www.bluegroup.systems/papers.
+Metrics: more than 8,000 citations; h-index 22 (Google Scholar; figures as of June 2026, reconfirm at submission). Google Scholar profile: https://geoffreychallen.com/scholar. Over 40 peer-reviewed publications in total; a complete list is at https://www.bluegroup.systems/papers.
 
 Computer science education (recent). Two papers at SIGCSE 2025, the premier international computing-education conference: "Investigating the Presence and Development of Student Instructor Preferences in a Large-Scale CS1 Course," and "Accelerating Accurate Assignment Authoring Using Solution-Generated Autograders" (the research behind my Questioner autograding system). At SIGCSE 2024: "Implementation of Split Deadlines in a Large CS1 Course," a study of an assessment policy that measurably improved student outcomes at scale. Earlier education research appeared at IEEE CSEE&T 2020 ("Data-Driven Investigation into Variants of Code Writing Questions") and ASE 2019 ("Grading-Based Test Suite Augmentation"). This body of work studies my own teaching innovations with real data from tens of thousands of students.
 
 Mobile systems and sensor networks (selected, highly cited). "Fidelity and Yield in a Volcano Monitoring Sensor Network" (OSDI 2006) — a foundational and widely cited study of a sensor network deployed on an active volcano, published at the top venue in computer systems. "MoteLab: A Wireless Sensor Network Testbed" (IPSN 2005) — a testbed adopted by researchers internationally. "Mercury: A Wearable Sensor Network Platform for High-Fidelity Motion Analysis" (SenSys 2009). "PocketParker: Pocketsourcing Parking Lot Availability" (UbiComp 2014). "Wireless Protocol Validation Under Uncertainty" (Formal Methods in System Design, 2017) — the journal version of work that won the Best Paper Award at Runtime Verification (RV) 2016. My systems work appears across the leading venues in the field, including OSDI, SenSys, MobiSys, UbiComp, IPSN, INFOCOM, HotOS, and HotMobile.
 
-Across these two areas my work has accumulated more than 6,500 citations, with several papers — particularly the volcano-monitoring deployment and the MoteLab testbed — among the more highly cited in their subfields and still referenced two decades after publication. My record therefore demonstrates both sustained recent productivity in computing education and a durable, internationally cited body of systems research. Beyond formal publication, much of my scholarly contribution takes the form of widely adopted open systems and openly published course materials — a mode of impact that citation counts understate but that reaches tens of thousands of learners and instructors directly.
+Across these two areas my work has accumulated more than 8,000 citations, with several papers — particularly the volcano-monitoring deployment and the MoteLab testbed — among the more highly cited in their subfields and still referenced two decades after publication. My record therefore demonstrates both sustained recent productivity in computing education and a durable, internationally cited body of systems research. Beyond formal publication, much of my scholarly contribution takes the form of widely adopted open systems and openly published course materials — a mode of impact that citation counts understate but that reaches tens of thousands of learners and instructors directly.
 
 Edited volume. Co-editor, "Wireless Sensor Networks: Deployments and Design Frameworks" (Springer, 2010), with an accompanying chapter on addressing data quality through iterative volcano-monitoring deployments.
 
@@ -266,13 +266,13 @@ Long-term benefits to NSW. A stronger, more equitable computing-education pipeli
 **Field 54 — Additional information**
 
 ```text
-A note on standing and evidence. The defining feature of my record is that my contributions are openly available and demonstrably adopted beyond my own institution and country — which speaks directly to the standard of "exceptional and outstanding achievement." My open platforms are used by learners and instructors worldwide; my research has been cited more than 6,500 times (h-index 19); and my recent AI-in-education work has been recognised through invited fellowships from Replit and the University of Illinois Summer AI Studio. In the same year I won both my college's and my school's highest teaching honours.
+A note on standing and evidence. The defining feature of my record is that my contributions are openly available and demonstrably adopted beyond my own institution and country — which speaks directly to the standard of "exceptional and outstanding achievement." My open platforms are used by learners and instructors worldwide; my research has been cited more than 8,000 times (h-index 22); and my recent AI-in-education work has been recognised through invited fellowships from Replit and the University of Illinois Summer AI Studio. In the same year I won both my college's and my school's highest teaching honours.
 
 A note on a rare combination of capabilities. Few people combine, in one person, a deep teaching practice at very large scale, the software-engineering ability to build the educational technology that teaching now depends on, an international research record with competitive-grant success, and demonstrated leadership in teaching with AI. That combination is precisely what universities need as they navigate the AI transition, and it is what I would bring to NSW.
 
 A note on fit for NSW at a senior level. The University of Sydney's School of Computer Science currently has no education-focused academic at Associate Professor (Level D). My appointment fills that gap exactly: senior enough to provide educational leadership and mentorship across the School, while remaining hands-on in the classroom and in building modern teaching infrastructure. Australia, and NSW specifically, is already a world leader in AI in education; my work is a natural addition to and amplifier of that leadership.
 
-A note on international reach. The clearest evidence of standing in my field is adoption by others. My open course platform includes interactive walkthroughs contributed by 264 instructors and is used at institutions beyond my own, from Northeastern University in the United States to high-school and community-college programs; my sensor-network testbeds and systems software have been used by researchers internationally; and my work is cited more than 6,500 times by researchers around the world. This independent, international take-up — not self-description — is what I would point an assessor to as evidence of an internationally recognised record.
+A note on international reach. The clearest evidence of standing in my field is adoption by others. My open course platform includes interactive walkthroughs contributed by 264 instructors and is used at institutions beyond my own, from Northeastern University in the United States to high-school and community-college programs; my sensor-network testbeds and systems software have been used by researchers internationally; and my work is cited more than 8,000 times by researchers around the world. This independent, international take-up — not self-description — is what I would point an assessor to as evidence of an internationally recognised record.
 
 Supporting evidence available on request. I can provide, at the assessment stage: my full curriculum vitae and complete publication list; current Google Scholar citation metrics; documentation of the adoption and impact of my open educational software; my University of Sydney offer letter; and letters of recommendation from senior international leaders in computer science and computing education. [Note for you: line up 2–3 international referees — your checklist suggests Margo Seltzer, Nate Derbinsky, and Cinda Heeren — and consider one NSW-based referee from the University of Sydney.]
 ```
@@ -298,19 +298,19 @@ Associate Professor (Level D), Education Focused, School of Computer Science (Sy
 **Field 58 — Annual salary** (≤255)
 
 ```text
-[CONFIRM exact figure from offer letter.] Within the University of Sydney academic Level D band (up to A$207,069 p.a.) plus 17% superannuation.
+Approximately A$200,000 per annum base salary (University of Sydney academic Level D), plus 17% employer superannuation, full-time.
 ```
 
 **Field 59 — Contract type & expected start date** (≤255)
 
 ```text
-Full-time continuing (ongoing) academic appointment, Education Focused (Sydney Horizon Educators); expected start date May 2027. [Confirm exact start date against your offer letter.]
+Full-time continuing (ongoing) academic appointment, Education Focused (Sydney Horizon Educators); expected start date May 2027.
 ```
 
 **Field 60 — Conditions / special arrangements** (≤255)
 
 ```text
-Standard University appointment terms, including pre-employment checks and contingent on grant of an appropriate visa and work authorisation and on relocation to Sydney. [Edit to match the specific conditions in your offer letter.]
+Full-time (37.5 hours/week), continuing, with a 12-month probation period; standard University terms and pre-employment checks; contingent on appropriate work authorisation and relocation to Sydney. [Edit to match your offer letter.]
 ```
 
 **Field 61 — Significance of the job offer** (≤255)

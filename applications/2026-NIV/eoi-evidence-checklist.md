@@ -43,9 +43,11 @@ Researchers & Academics pathway. The ROI is valid 6 months; if shortlisted, a fu
 
 These were kept conservative/defensible in the CV draft; confirm current values at submission time:
 
-1. **Citation metrics.** CV says "more than 6,500 citations; h-index 19." The documented snapshot was 6,595 / h-19 (likely higher now). **Check your Google Scholar profile and update both numbers.**
+1. **Citation metrics — resolved (2026-06-05).** Updated to **more than 8,000 citations; h-index 22** (Google Scholar, user-confirmed June 2026). Now used in the NIV CV (`mdx/CV-NIV.mdx`) and the NSW ROI responses. Reconfirm the live figures at final submission.
 2. **NSF CAREER amount — resolved.** Using the official **NSF award record (#1652397)** total of **$525,582** (the obligated-vs-total distinction is not annotated, per your decision). This figure is now used in both the EOI CV and the master `mdx/CV.mdx`. (For reference, other sources had said $557,481 and $537K.)
 3. **Total students.** CV uses "more than 16,000 students across 21 terms" (master CV states 16,107; teaching statement states 15,007). Confirm the figure you want to stand behind.
+4. **Sydney salary — resolved (2026-06-05).** Present on the form rounded as **~A$200K p.a. base + 17% super** (avoid over-precision; the exact base will have drifted by a May 2027 start). For reference, offer notes give Level D2 base A$194,332 (A$202,105 after 1 July), full-time (37.5 hrs/week), 12-month probation — `~/positions/sydney-horizons-educators/offer/`. Current Illinois income presented as ~US$180K (10-month appointment).
+5. **Start date — resolved (2026-06-05): May 2027** (user-confirmed as the currently agreed date). CV and ROI form already say May 2027; no change needed. (Earlier negotiation notes had mentioned Feb/Jul 2027.)
 
 ---
 
