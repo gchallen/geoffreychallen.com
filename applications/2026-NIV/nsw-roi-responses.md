@@ -3,7 +3,7 @@
 National Innovation Visa (subclass 858), **Researcher and Academic** pathway.
 Form: https://investmentnsw.tfaforms.net/4634279
 
-**How to use:** each answer is in a copy-ready code block as **plain text** (the form boxes are plain textareas, so markdown bold and italics are omitted—they'd paste as literal characters). Long boxes have a **5000-character limit**, and these drafts run close to it; the job-offer and engagement boxes are capped at **255 characters**. `[BRACKETED ITEMS]` need your input before submitting. **Google Scholar metrics** are current: 8,000+ citations / h-index 22. Character counts are noted per box; re-check after editing.
+**How to use:** each answer sits in its own code block as plain text, ready to paste straight into the matching form field (the boxes are plain textareas, so markdown is left out). Long boxes have a 5000-character limit; the job-offer and engagement boxes are capped at 255 characters.
 
 ---
 
@@ -111,10 +111,6 @@ Ph.D., Computer Science, Harvard University (2010). Dissertation: "Data Fidelity
 Postdoctoral Associate, Massachusetts Institute of Technology (2010–2011), in Professor Hari Balakrishnan's Networks and Mobile Systems group, one of the most prominent groups in the area. MIT is consistently ranked the world's number-one university (QS) and among the global top five (Times Higher Education). The year deepened the systems and mobile-computing expertise my later faculty research built on.
 
 A.B., Physics, Harvard University (2003). A rigorous undergraduate foundation in physics and mathematics that underpins my systems research and my quantitative, data-driven approach to studying teaching and learning.
-
-From May 2027 I will hold the rank of Associate Professor (Level D) at the University of Sydney, itself a Group of Eight university ranked among the world's top 20 (QS) and a recognised international leader in computing and in AI in education.
-
-[Optional to add if/when you pursue it: Higher Education Academy (HEA) Fellowship or Senior Fellowship, which the University of Sydney lists as preferred for this role.]
 ```
 
 **Field 24 — Publication record**
@@ -189,8 +185,6 @@ Community building, leadership, and equity. I co-founded the Illinois Computer S
 
 ## Why NSW?
 
-> These four answers draw on the Sydney Horizon Educators program and the University of Sydney's leadership in AI in education, as you asked. They're grounded in fact but should be read in your own voice—adjust anything that doesn't sound like you, and fill the bracketed specifics where you can.
-
 **Field 50 — Why have you chosen NSW as the base for your activities?**
 
 ```text
@@ -204,7 +198,7 @@ Third, NSW has the strongest surrounding ecosystem in Australia. The University 
 
 This is also where I can do the most good. Every university is now working out how to teach and assess when capable AI is everywhere. That is the problem I have spent two years solving in practice: teaching students to build with AI coding agents while keeping rigorous, proctored assessment of the fundamentals. Because Sydney and NSW already lead the country on AI in education, I can both contribute to and learn from the strongest such community here, and help build shared, AI-resilient assessment that other NSW institutions can use.
 
-Finally, this is a long-term move. I am relocating to build a career and a life in NSW, not to pass through. I am committed to Sydney as the long-term base for my teaching and research [and family/personal life—adjust as appropriate], and to investing in the state's institutions over time. A senior, continuing appointment, a research community that leads the world in AI in education, and an innovation district on the University's doorstep is a combination I could not assemble anywhere else.
+Finally, this is a long-term move. I am relocating to build a career and a life in NSW, not to pass through. I am committed to Sydney as the long-term base for my work and my family, and to investing in the state's institutions over time. A senior, continuing appointment, a research community that leads the world in AI in education, and an innovation district on the University's doorstep is a combination I could not assemble anywhere else.
 ```
 
 **Field 51 — How do you plan to contribute to the economic, cultural, or community development of NSW?**
@@ -225,24 +219,20 @@ Building capability and economic impact. As the senior education-focused academi
 Concrete models I can bring. These approaches already run in my courses. They include My Project, where every student designs and builds their own software with an AI coding agent and is graded on genuine, AI-estimated effort rather than a shared specification; conversational AI assessments that probe understanding through dialogue and run securely in a testing centre; and a self-paced lesson format that lets me teach more material to more students without lowering standards. Each transfers to NSW classrooms and to the state's work to build an AI-capable workforce.
 
 Cultural and community contribution. Closing performance gaps, between genders, between majors and non-majors, and across prior experience, makes computing culture in NSW more inclusive. Because my materials and tools are free and open, that reach extends past the University to anyone in the state who wants to learn: school students, career-changers, and learners in regional and under-served communities.
-
-[Add any specific projections you're comfortable committing to—e.g. students taught per year, HDR students supervised, a target new course and launch date.]
 ```
 
 **Field 52 — Existing or planned partnerships with NSW-based organisations**
 
 ```text
-Confirmed. My main NSW partnership is the appointment itself: Associate Professor (Level D) in the Sydney Horizon Educators program, School of Computer Science, University of Sydney, from May 2027. It anchors my teaching, research, and student supervision in the state.
+My strongest NSW partnership is already in place: the appointment itself, as Associate Professor (Level D) in the Sydney Horizon Educators program, School of Computer Science, University of Sydney, from May 2027. It anchors my teaching, research, and student supervision in the state.
 
 Within the University of Sydney, my work lines up with a cluster of leading AI-in-education researchers I plan to work with, several of whom I met on my interview visit. They include colleagues working on AI-augmented teaching and the two-lane approach to assessment, including the Cogniti platform for educator-built AI agents, which parallels my own proctored-plus-AI model; researchers in open and scrutable learner models, whose work on showing students what a system knows about them connects to the transparent feedback I build into my courses; researchers in educational data mining and automated feedback for programming, which fits my Questioner autograding and analytics work; and faculty leading AI-literacy teaching. I want to turn these into joint teaching and co-authored research.
 
-Across NSW. I plan to build collaborations with other NSW universities active in computing and AI education, for example the computing-and-education research community at UNSW, and partners at UTS and Macquarie through the cross-institution Sydney Quantum Academy, which already links Sydney, UNSW, UTS, and Macquarie [name any you have real contacts at]. I have collaborated before with CSIRO, Australia's national science agency, which has a significant NSW presence.
+Across NSW. I plan to build collaborations with other NSW universities active in computing and AI education, for example the computing-and-education research community at UNSW, and partners at UTS and Macquarie through the cross-institution Sydney Quantum Academy, which already links Sydney, UNSW, UTS, and Macquarie. I have collaborated before with CSIRO, Australia's national science agency, which has a significant NSW presence.
 
-Industry, edtech, and the innovation district. The University sits inside Tech Central, Australia's largest innovation precinct, next to major technology employers (Atlassian, Canva, Google) and deep-tech incubators like Cicada Innovations. On campus, the Sydney Knowledge Hub connects research to industry and hosts around 30 deep-tech organisations, and student accelerators like INCUBATE and Genesis sit nearby, along with an active student computing community such as the Sydney Computing Society. All of this opens avenues for industry-connected teaching, student projects, and research translation. I also have a long working relationship with Ed (edstem.org), an Australian-founded education-technology company whose discussion and courseware tools are widely used in CS teaching; moving to NSW would let me deepen that work close to its Australian base [confirm Ed's NSW/Sydney presence before claiming it]. And I work with PrairieLearn, the platform behind the secure, AI-resistant testing model I would help bring to NSW.
+Industry, edtech, and the innovation district. The University sits inside Tech Central, Australia's largest innovation precinct, next to major technology employers (Atlassian, Canva, Google) and deep-tech incubators like Cicada Innovations. On campus, the Sydney Knowledge Hub connects research to industry and hosts around 30 deep-tech organisations, and student accelerators like INCUBATE and Genesis sit nearby, along with an active student computing community such as the Sydney Computing Society. All of this opens avenues for industry-connected teaching, student projects, and research translation. I also have a long working relationship with Ed (edstem.org), an Australian-founded education-technology company whose discussion and courseware tools are widely used in CS teaching; moving to NSW would let me deepen that work close to its Australian base. And I work with PrairieLearn, the platform behind the secure, AI-resistant testing model I would help bring to NSW.
 
 Schools and outreach. I will extend my high-school and community-college outreach, now run with partners like Chicago's Discovery Partners Institute and Wilbur Wright College, to NSW schools and TAFE, widening the pipeline into the University.
-
-[List any concrete NSW contacts, co-authors, or hosts to strengthen this answer with specifics.]
 ```
 
 **Field 53 — Future plans for your work in NSW (next 3–5 years)**
@@ -266,7 +256,7 @@ The long-term benefit to NSW is leadership on the defining question of this deca
 ```text
 What most distinguishes my record is that my work is openly available and adopted well beyond my own institution and country, by learners and instructors worldwide. That independent, international take-up is the heart of the case that my record is internationally recognised, and the standard of "exceptional and outstanding achievement."
 
-At the assessment stage I can provide supporting evidence: my full CV and publication list; current Google Scholar metrics; documentation of how widely my open educational software is used; my University of Sydney offer letter; and reference letters from senior international leaders in computer science and computing education. [Note for you: line up 2–3 international referees—your checklist suggests Margo Seltzer, Nate Derbinsky, and Cinda Heeren—and consider one NSW-based referee from the University of Sydney.]
+At the assessment stage I can provide supporting evidence: my full CV and publication list; current Google Scholar metrics; documentation of how widely my open educational software is used; my University of Sydney offer letter; and reference letters from senior international leaders in computer science and computing education.
 ```
 
 ---
@@ -302,7 +292,7 @@ Full-time continuing (ongoing) academic appointment, Education Focused (Sydney H
 **Field 60 — Conditions / special arrangements** (≤255)
 
 ```text
-Full-time (37.5 hours/week), continuing, with a 12-month probation period; standard University terms and pre-employment checks; contingent on appropriate work authorisation and relocation to Sydney. [Edit to match your offer letter.]
+Full-time (37.5 hours/week), continuing, with a 12-month probation period; standard University terms and pre-employment checks; contingent on appropriate work authorisation and relocation to Sydney.
 ```
 
 **Field 61 — Significance of the job offer** (≤255)
@@ -315,4 +305,4 @@ A senior, continuing appointment at a leading NSW university anchors my contribu
 
 ## NSW Government Engagement Section
 
-**Field 62 — Previously engaged a NSW Government agency?** → `[Likely No. The University of Sydney is a university, not a NSW Government agency. If you have engaged Investment NSW or another agency about this nomination, answer Yes and complete fields 63–69 with that contact's details.]`
+**Field 62 — Previously engaged a NSW Government agency?** → **No** (the University of Sydney is a university, not a NSW Government agency).
