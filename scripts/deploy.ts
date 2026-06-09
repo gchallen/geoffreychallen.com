@@ -108,14 +108,14 @@ function generatePdfs(): void {
 
 function buildAndPushWww(): void {
   exec(
-    `docker buildx build . --platform=linux/amd64,linux/arm64/v8 --tag geoffreychallen/www:latest --tag geoffreychallen/www:${version} --push`,
+    `docker buildx build . --platform=linux/amd64 --tag geoffreychallen/www:latest --tag geoffreychallen/www:${version} --push`,
   )
 }
 
 function buildAndPushRag(): void {
   exec("bun build:vector")
   exec(
-    `docker buildx build . --platform=linux/amd64,linux/arm64/v8 --tag geoffreychallen/rag-server:latest --tag geoffreychallen/rag-server:${version} --push`,
+    `docker buildx build . --platform=linux/amd64 --tag geoffreychallen/rag-server:latest --tag geoffreychallen/rag-server:${version} --push`,
     join(ROOT, "rag"),
   )
 }

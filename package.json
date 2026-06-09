@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "geoffreychallen.com",
-  "version": "2026.6.3",
+  "version": "2026.6.4",
   "type": "module",
   "scripts": {
     "build:mdx": "tsx bin/build.ts mdx output --build --clean",
@@ -17,7 +17,7 @@
     "deploy": "tsx scripts/deploy.ts",
     "dev": "bun start",
     "docker:build": "docker build --build-arg VERSION=$npm_package_version --build-arg GIT_COMMIT=$(git show --no-patch --format=%h) --build-arg BUILD_DATE=`date -u +\"%Y-%m-%dT%H:%M:%SZ\"` . -t geoffreychallen/www:latest && bun docker:tag",
-    "docker:push": "docker buildx build . --platform=linux/amd64,linux/arm64/v8 --tag geoffreychallen/www:latest --tag geoffreychallen/www:$npm_package_version --push",
+    "docker:push": "docker buildx build . --platform=linux/amd64 --tag geoffreychallen/www:latest --tag geoffreychallen/www:$npm_package_version --push",
     "docker:tag": "docker tag geoffreychallen/www:latest geoffreychallen/www:$npm_package_version",
     "eslint": "eslint components layouts pages workers",
     "k8s:devLogs": "kubectl logs -f --tail=-1 -l app=dev-geoffreychallen-com --all-containers -n geoffreychallen",
@@ -43,7 +43,7 @@
     "rag:ncu": "cd rag && uv pip list --outdated",
     "rag:ncu:update": "cd rag && uv pip install --upgrade -r requirements.txt --resolution highest && uv run python update_requirements.py",
     "rag:prod": "cd rag && uv run python run_production.py",
-    "rag:push": "bun build:vector && cd rag && docker buildx build . --platform=linux/amd64,linux/arm64/v8 --tag geoffreychallen/rag-server:latest --tag geoffreychallen/rag-server:$npm_package_version --push",
+    "rag:push": "bun build:vector && cd rag && docker buildx build . --platform=linux/amd64 --tag geoffreychallen/rag-server:latest --tag geoffreychallen/rag-server:$npm_package_version --push",
     "rag:run": "cd rag && docker compose up rag-server",
     "rag:stop": "cd rag && docker compose down",
     "serve": "next start",
