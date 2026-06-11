@@ -2848,6 +2848,22 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
         });
       });
 
+      // The course-site embeds are lazy <iframe>s; when Reveal brings an
+      // upcoming slide within view distance the iframe loads and can steal
+      // keyboard focus, killing arrow-key navigation until the user clicks
+      // the page. When focus lands in an iframe that is NOT on the current
+      // slide, pull it back. Iframes on the current slide keep focus so the
+      // interactive demos stay clickable.
+      window.addEventListener('blur', () => {
+        setTimeout(() => {
+          const el = document.activeElement;
+          if (el && el.tagName === 'IFRAME' && !Reveal.getCurrentSlide()?.contains(el)) {
+            el.blur();
+            document.body.focus();
+          }
+        }, 0);
+      });
+
       window.addEventListener('resize', () => {
         if (!initialized) return;
         // Viewport changed — invalidate all cached fits and refit the
