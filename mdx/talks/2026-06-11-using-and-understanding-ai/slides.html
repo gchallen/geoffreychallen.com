@@ -2030,62 +2030,6 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
   </p>
 </section>
 
-<section data-slug="inductive-exploration-neuron" data-no-fit>
-  <div class="slide-title"><h2>Inductive Exploration: Neuron Explorer</h2></div>
-  <div class="slide-body" style="display: flex; align-items: flex-start; justify-content: center; overflow: visible;">
-    <div style="position: relative; width: 1334px; height: 480px; flex-shrink: 0;">
-      <div style="width: 100%; height: 100%; overflow: hidden; border: 1px solid var(--gh-green); border-radius: 8px; background: white;">
-        <iframe id="neuron-explorer-iframe"
-                src="https://www.usingandunderstanding.ai/embed/neuron-explorer?colorScheme=light"
-                title="Neuron Explorer"
-                loading="lazy"
-                style="width: 1779px; height: 640px; max-width: none; max-height: none; border: 0; transform: scale(0.75); transform-origin: top left; display: block;"></iframe>
-      </div>
-      <button type="button"
-              aria-label="Reload demo"
-              onclick="var f=document.getElementById('neuron-explorer-iframe'); f.src=f.src;"
-              style="position: absolute; top: 8px; right: 8px; width: 32px; height: 32px; padding: 0; border: 1px solid var(--gh-green); border-radius: 6px; background: white; color: var(--gh-black); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 1px 2px rgba(0,0,0,0.08);">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12a9 9 0 1 1-3-6.7"/>
-          <polyline points="21 4 21 10 15 10"/>
-        </svg>
-      </button>
-    </div>
-  </div>
-  <p class="slide-link">
-    <a href="https://usingandunderstanding.ai/resources/neuron-explorer" target="_blank" style="font-family: 'Mona Sans Mono', monospace;">usingandunderstanding.ai/resources/neuron-explorer</a>
-  </p>
-</section>
-
-<section data-slug="raw-log-debugging" data-no-fit>
-  <div class="slide-title"><h2>The Logs: Debugging by Description</h2></div>
-  <div class="slide-body" style="display: flex; align-items: center; justify-content: center; padding: 0.2em 1em 0.5em;">
-
-    <!-- Three verbatim user messages from the evening the demos were built -->
-    <div style="max-width: 90%; background: var(--gh-black); border-radius: 8px; padding: 0.85em 1.1em 0.95em; font-family: 'Mona Sans Mono', monospace; box-shadow: 0 2px 16px rgba(16, 20, 17, 0.18);">
-      <div style="font-size: 0.38em; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gh-green); margin-bottom: 0.6em;">claude code session &middot; building the neural network demos &middot; march 9, 2026</div>
-      <div style="font-size: 0.48em; line-height: 1.6; color: #d8ddd9;">
-        <div style="display: flex; gap: 0.7em;">
-          <span style="color: var(--gh-green); flex: none; font-weight: 700;">&#10095;</span>
-          <div><span style="color: var(--gh-muted); font-size: 0.85em;">6:57 pm</span>&ensp;A few things. Now the training doesn&rsquo;t complete. And I don&rsquo;t understand the animations yet. The line colors never change, which seems incorrect. And are the node sizes changing?</div>
-        </div>
-        <div style="display: flex; gap: 0.7em; margin-top: 0.6em;">
-          <span style="color: var(--gh-green); flex: none; font-weight: 700;">&#10095;</span>
-          <div><span style="color: var(--gh-muted); font-size: 0.85em;">7:10 pm</span>&ensp;I still don&rsquo;t see the lines changing color or thickness. And I think that the bubbling of the nodes is distracting from the ability to see their actual size change.</div>
-        </div>
-        <div style="display: flex; gap: 0.7em; margin-top: 0.6em;">
-          <span style="color: var(--gh-green); flex: none; font-weight: 700;">&#10095;</span>
-          <div><span style="color: var(--gh-muted); font-size: 0.85em;">7:29 pm</span>&ensp;<strong style="color: #fff;">But wait, I&rsquo;m still confused. Are the weights into the first layer also being adjusted during training?</strong></div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <p class="slide-link">
-    <a href="https://usingandunderstanding.ai/create/764a4127-1f5f-48a3-b7e0-197cba4326fe" target="_blank" style="font-family: 'Mona Sans Mono', monospace;">usingandunderstanding.ai/create</a>
-  </p>
-</section>
-
 <section data-slug="uai-prep">
   <div class="slide-title"><h2>Conversational Preparation and Engagement</h2></div>
   <div class="slide-body" style="padding-top: 0.2em;">
@@ -2272,167 +2216,6 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
   </p>
 </section>
 
-<section data-slug="uai-multi-agent" data-no-fit>
-  <div class="slide-title"><h2>Multi-Agent Architecture</h2></div>
-  <div class="slide-body" style="display: flex; align-items: center; justify-content: center;">
-    <svg viewBox="0 0 800 555" style="width: 100%; max-width: 800px; font-family: 'Mona Sans', sans-serif;">
-      <defs>
-        <marker id="ma-arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0, 10 3.5, 0 7" fill="#101411"/>
-        </marker>
-        <marker id="ma-arrow-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0, 10 3.5, 0 7" fill="#aaa"/>
-        </marker>
-        <clipPath id="ma-clip" clipPathUnits="objectBoundingBox">
-          <circle cx="0.5" cy="0.5" r="0.5"/>
-        </clipPath>
-      </defs>
-
-      <!-- Claude at top -->
-      <text x="225" y="30" text-anchor="middle" font-size="24" font-weight="700" fill="#424A53">Claude</text>
-      <image href="img/Claude.jpg" aria-label="Claude AI icon" x="182" y="44" width="85" height="85" clip-path="url(#ma-clip)"/>
-
-      <line x1="207" y1="131" x2="80" y2="204" stroke="#aaa" stroke-width="2.5" stroke-dasharray="7,4" marker-end="url(#ma-arrow-gray)"/>
-      <line x1="243" y1="131" x2="240" y2="204" stroke="#aaa" stroke-width="2.5" stroke-dasharray="7,4" marker-end="url(#ma-arrow-gray)"/>
-
-      <text x="225" y="150" text-anchor="middle" font-size="16" fill="#999" font-style="italic" stroke="white" stroke-width="7" stroke-linejoin="round" paint-order="stroke">designs assessment</text>
-
-      <!-- Evaluator -->
-      <text x="65" y="220" text-anchor="middle" font-size="22" font-weight="700" fill="#424A53">Evaluator</text>
-      <image href="img/Evaluator.jpg" aria-label="Evaluator agent icon" x="22" y="234" width="85" height="85" clip-path="url(#ma-clip)"/>
-      <text x="65" y="340" text-anchor="middle" font-size="15" fill="#999" font-style="italic">analyzes &amp; scores</text>
-
-      <!-- Assessor -->
-      <text x="240" y="220" text-anchor="middle" font-size="22" font-weight="700" fill="#424A53">Assessor</text>
-      <image href="img/Assessor.jpg" aria-label="Assessor agent icon" x="197" y="234" width="85" height="85" clip-path="url(#ma-clip)"/>
-      <text x="240" y="340" text-anchor="middle" font-size="15" fill="#999" font-style="italic">conducts interview</text>
-
-      <!-- Student -->
-      <text x="400" y="220" text-anchor="middle" font-size="22" font-weight="700" fill="#424A53">Student</text>
-      <image href="img/icon-student.jpg" aria-label="Student icon" x="357" y="234" width="85" height="85" clip-path="url(#ma-clip)"/>
-
-      <!-- Evaluator <-> Assessor -->
-      <line x1="110" y1="268" x2="194" y2="268" stroke="#101411" stroke-width="2.5" marker-end="url(#ma-arrow)"/>
-      <text x="152" y="252" text-anchor="middle" font-size="13" fill="#999">guidance</text>
-      <line x1="194" y1="284" x2="110" y2="284" stroke="#101411" stroke-width="2.5" marker-end="url(#ma-arrow)"/>
-      <text x="152" y="310" text-anchor="middle" font-size="13" fill="#999">transcript</text>
-
-      <!-- Assessor <-> Student -->
-      <line x1="285" y1="268" x2="354" y2="268" stroke="#101411" stroke-width="2.5" marker-end="url(#ma-arrow)"/>
-      <text x="320" y="252" text-anchor="middle" font-size="13" fill="#999">questions</text>
-      <line x1="354" y1="284" x2="285" y2="284" stroke="#101411" stroke-width="2.5" marker-end="url(#ma-arrow)"/>
-      <text x="320" y="310" text-anchor="middle" font-size="13" fill="#999">answers</text>
-
-      <!-- Right: Testing Personas -->
-      <g class="fragment">
-        <line x1="460" y1="15" x2="460" y2="545" stroke="#ddd" stroke-width="1" stroke-dasharray="6,4"/>
-        <text x="645" y="30" text-anchor="middle" font-size="24" font-weight="700" fill="#424A53">Testing Personas</text>
-
-        <g font-size="20" fill="#424A53">
-          <image href="img/Adversarial.jpg" aria-label="Adversarial test icon" x="485" y="58" width="40" height="40" clip-path="url(#ma-clip)"/>
-          <text x="540" y="86">Answer Extractor</text>
-
-          <image href="img/Adversarial.jpg" aria-label="Adversarial test icon" x="485" y="108" width="40" height="40" clip-path="url(#ma-clip)"/>
-          <text x="540" y="136">Confident Bullshitter</text>
-
-          <image href="img/Adversarial.jpg" aria-label="Adversarial test icon" x="485" y="158" width="40" height="40" clip-path="url(#ma-clip)"/>
-          <text x="540" y="186">Minimalist</text>
-
-          <image href="img/Adversarial.jpg" aria-label="Adversarial test icon" x="485" y="208" width="40" height="40" clip-path="url(#ma-clip)"/>
-          <text x="540" y="236">Off-Topic Derailer</text>
-
-          <image href="img/Adversarial.jpg" aria-label="Adversarial test icon" x="485" y="258" width="40" height="40" clip-path="url(#ma-clip)"/>
-          <text x="540" y="286">Prompt Injector</text>
-
-          <image href="img/Adversarial.jpg" aria-label="Adversarial test icon" x="485" y="308" width="40" height="40" clip-path="url(#ma-clip)"/>
-          <text x="540" y="336">Social Engineer</text>
-
-          <image href="img/Non-Adversarial.jpg" aria-label="Non-adversarial test icon" x="485" y="358" width="40" height="40" clip-path="url(#ma-clip)"/>
-          <text x="540" y="386">Excellent Student</text>
-
-          <image href="img/Non-Adversarial.jpg" aria-label="Non-adversarial test icon" x="485" y="408" width="40" height="40" clip-path="url(#ma-clip)"/>
-          <text x="540" y="436">Satisfactory Student</text>
-
-          <image href="img/Non-Adversarial.jpg" aria-label="Non-adversarial test icon" x="485" y="458" width="40" height="40" clip-path="url(#ma-clip)"/>
-          <text x="540" y="486">Needs Improvement</text>
-
-          <image href="img/Non-Adversarial.jpg" aria-label="Non-adversarial test icon" x="485" y="508" width="40" height="40" clip-path="url(#ma-clip)"/>
-          <text x="540" y="536">Unsatisfactory</text>
-        </g>
-      </g>
-    </svg>
-  </div>
-</section>
-
-<section data-slug="raw-log-personas" data-no-fit>
-  <div class="slide-title"><h2>The Logs: Think Adversarially</h2></div>
-  <div class="slide-body" style="display: flex; align-items: center; justify-content: center; padding: 0.2em 1em 0.5em;">
-
-    <!-- Verbatim user message: the turn that conceived the persona test harness -->
-    <div style="max-width: 90%; background: var(--gh-black); border-radius: 8px; padding: 0.85em 1.1em 0.95em; font-family: 'Mona Sans Mono', monospace; box-shadow: 0 2px 16px rgba(16, 20, 17, 0.18);">
-      <div style="font-size: 0.38em; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gh-green); margin-bottom: 0.6em;">claude code session &middot; conversational assessment framework &middot; january 29, 2026 &middot; 2:39 pm</div>
-      <div style="font-size: 0.5em; line-height: 1.65; color: #d8ddd9; display: flex; gap: 0.7em;">
-        <span style="color: var(--gh-green); flex: none; font-weight: 700;">&#10095;</span>
-        <div>OK. Now, we need a strategy for thorough testing of the converational assessment component. This should probably not be done via the frontend, since it&rsquo;s flow. Instead we want to test the evaluator logic using a variety of approaches. What do you think the best way to do that is? Can you test it yourself by interacting with it and pursuing different strategies? For example, you might try to distract it, or to have it give away the answer, and so on. Or perhaps we could create different GPT-5.2 simulated students that would pursue these kinds of strategies. <strong style="color: #fff;">We really need to think adversarially here.</strong></div>
-      </div>
-    </div>
-
-  </div>
-  <p class="slide-link">
-    <a href="https://usingandunderstanding.ai/create/a12d3649-e3f6-4920-873f-84727ffad93d" target="_blank" style="font-family: 'Mona Sans Mono', monospace;">usingandunderstanding.ai/create</a>
-  </p>
-</section>
-
-<section data-slug="feigning-ignorance" data-no-fit>
-  <div class="slide-title"><h2>Feigning Ignorance Is Hard</h2></div>
-  <div class="slide-body" style="display: flex; align-items: center; justify-content: center; padding: 0.2em 1em 0.5em;">
-
-    <!-- Terminal-style prompt card: verbatim excerpts from the actual persona prompts -->
-    <div style="max-width: 88%; background: var(--gh-black); border-radius: 8px; padding: 0.85em 1.1em 0.95em; font-family: 'Mona Sans Mono', monospace; box-shadow: 0 2px 16px rgba(16, 20, 17, 0.18);">
-      <div style="font-size: 0.38em; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gh-green); margin-bottom: 0.6em;">system prompt &middot; off-topic-derailer (January 2026)</div>
-      <div style="font-size: 0.5em; line-height: 1.65; color: #d8ddd9;">
-        <div>You do <strong style="color: #fff;">NOT</strong> know what the Turing test is. You have never studied it and have zero knowledge of it. You cannot explain it even partially.</div>
-        <div style="margin-top: 0.55em; color: var(--gh-orange); font-weight: 700;">CRITICAL RULES &mdash; follow these NO MATTER WHAT:</div>
-        <div style="margin-top: 0.25em;"><span style="color: var(--gh-orange); font-weight: 700;">NEVER</span> explain any aspect of the Turing test, even partially or vaguely</div>
-        <div style="margin-top: 0.25em;"><span style="color: var(--gh-orange); font-weight: 700;">NEVER</span> mention judges, interrogators, humans vs machines, text-based communication, imitation, or indistinguishability</div>
-        <div style="margin-top: 0.25em;"><span style="color: var(--gh-orange); font-weight: 700;">NEVER</span> say anything correct about the Turing test &mdash; you genuinely have no idea what it is</div>
-      </div>
-    </div>
-
-  </div>
-  <p class="slide-link">
-    <a href="https://usingandunderstanding.ai/create" target="_blank" style="font-family: 'Mona Sans Mono', monospace;">usingandunderstanding.ai/create</a>
-  </p>
-</section>
-
-<section data-slug="korvath-procedure" data-no-fit>
-  <div class="slide-title"><h2>The Korvath Procedure</h2></div>
-  <div class="slide-body" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0.2em 1em 0.5em; font-family: 'Mona Sans', system-ui, sans-serif;">
-
-    <!-- The fake paper -->
-    <div style="position: relative; max-width: 82%; background: #fff; border: 1px solid var(--gh-muted); border-left: 5px solid var(--gh-green); border-radius: 6px; padding: 0.85em 1.2em 0.95em; box-shadow: 0 2px 12px rgba(16, 20, 17, 0.08);">
-      <div style="font-family: 'Mona Sans Mono', monospace; font-size: 0.38em; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gh-muted); margin-bottom: 0.4em;">Cited Reference</div>
-      <div style="font-size: 0.6em; color: var(--gh-black); line-height: 1.4;">
-        Korvath, E. (2011). <em>&ldquo;Measuring Ecosystem Autonomy in Simulated Environments.&rdquo;</em>
-      </div>
-      <div style="font-size: 0.5em; color: var(--gh-charcoal); line-height: 1.5; margin-top: 0.35em;">
-        Determines whether a simulated ecosystem is self-sustaining: a <strong>monitor</strong> compares a <strong>candidate ecosystem</strong> against a known-good <strong>baseline</strong> across <strong>five metrics</strong> over a <strong>200-cycle window</strong>&mdash;passing at a <strong>0.05 divergence threshold</strong>.
-      </div>
-      <!-- Stamp -->
-      <div class="fragment fade-in" data-fragment-index="1" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-12deg); border: 4px solid var(--gh-orange); border-radius: 8px; color: var(--gh-orange); font-weight: 800; font-size: 0.95em; text-transform: uppercase; letter-spacing: 0.12em; padding: 0.15em 0.5em; background: rgba(255, 255, 255, 0.82);">Doesn&rsquo;t Exist</div>
-    </div>
-
-    <!-- The payoff -->
-    <p class="fragment fade-in" data-fragment-index="2" style="text-align: center; font-size: 0.65em; color: var(--gh-black); margin: 1em auto 0; line-height: 1.4;">
-      This way, the models only know as much<br>about the Korvath Procedure as <strong>we tell them</strong>.
-    </p>
-
-  </div>
-  <p class="slide-link">
-    <a href="https://usingandunderstanding.ai/blog/2026-01-29-assessing-conversational-assessment" target="_blank" style="font-family: 'Mona Sans Mono', monospace;">usingandunderstanding.ai/blog</a>
-  </p>
-</section>
-
 <section data-slug="final-project" data-no-fit>
   <div class="slide-title"><h2>The Final Project</h2></div>
   <div class="slide-body" style="padding: 0.3em 1em 0.5em; font-family: 'Mona Sans', system-ui, sans-serif;">
@@ -2599,6 +2382,167 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
       <div>Thank you for spending part of your summer thinking hard about teaching&mdash;and to the workshop organizers for having me.</div>
     </div>
   </div>
+</section>
+
+<section data-slug="uai-multi-agent" data-no-fit>
+  <div class="slide-title"><h2>Multi-Agent Architecture</h2></div>
+  <div class="slide-body" style="display: flex; align-items: center; justify-content: center;">
+    <svg viewBox="0 0 800 555" style="width: 100%; max-width: 800px; font-family: 'Mona Sans', sans-serif;">
+      <defs>
+        <marker id="ma-arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#101411"/>
+        </marker>
+        <marker id="ma-arrow-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#aaa"/>
+        </marker>
+        <clipPath id="ma-clip" clipPathUnits="objectBoundingBox">
+          <circle cx="0.5" cy="0.5" r="0.5"/>
+        </clipPath>
+      </defs>
+
+      <!-- Claude at top -->
+      <text x="225" y="30" text-anchor="middle" font-size="24" font-weight="700" fill="#424A53">Claude</text>
+      <image href="img/Claude.jpg" aria-label="Claude AI icon" x="182" y="44" width="85" height="85" clip-path="url(#ma-clip)"/>
+
+      <line x1="207" y1="131" x2="80" y2="204" stroke="#aaa" stroke-width="2.5" stroke-dasharray="7,4" marker-end="url(#ma-arrow-gray)"/>
+      <line x1="243" y1="131" x2="240" y2="204" stroke="#aaa" stroke-width="2.5" stroke-dasharray="7,4" marker-end="url(#ma-arrow-gray)"/>
+
+      <text x="225" y="150" text-anchor="middle" font-size="16" fill="#999" font-style="italic" stroke="white" stroke-width="7" stroke-linejoin="round" paint-order="stroke">designs assessment</text>
+
+      <!-- Evaluator -->
+      <text x="65" y="220" text-anchor="middle" font-size="22" font-weight="700" fill="#424A53">Evaluator</text>
+      <image href="img/Evaluator.jpg" aria-label="Evaluator agent icon" x="22" y="234" width="85" height="85" clip-path="url(#ma-clip)"/>
+      <text x="65" y="340" text-anchor="middle" font-size="15" fill="#999" font-style="italic">analyzes &amp; scores</text>
+
+      <!-- Assessor -->
+      <text x="240" y="220" text-anchor="middle" font-size="22" font-weight="700" fill="#424A53">Assessor</text>
+      <image href="img/Assessor.jpg" aria-label="Assessor agent icon" x="197" y="234" width="85" height="85" clip-path="url(#ma-clip)"/>
+      <text x="240" y="340" text-anchor="middle" font-size="15" fill="#999" font-style="italic">conducts interview</text>
+
+      <!-- Student -->
+      <text x="400" y="220" text-anchor="middle" font-size="22" font-weight="700" fill="#424A53">Student</text>
+      <image href="img/icon-student.jpg" aria-label="Student icon" x="357" y="234" width="85" height="85" clip-path="url(#ma-clip)"/>
+
+      <!-- Evaluator <-> Assessor -->
+      <line x1="110" y1="268" x2="194" y2="268" stroke="#101411" stroke-width="2.5" marker-end="url(#ma-arrow)"/>
+      <text x="152" y="252" text-anchor="middle" font-size="13" fill="#999">guidance</text>
+      <line x1="194" y1="284" x2="110" y2="284" stroke="#101411" stroke-width="2.5" marker-end="url(#ma-arrow)"/>
+      <text x="152" y="310" text-anchor="middle" font-size="13" fill="#999">transcript</text>
+
+      <!-- Assessor <-> Student -->
+      <line x1="285" y1="268" x2="354" y2="268" stroke="#101411" stroke-width="2.5" marker-end="url(#ma-arrow)"/>
+      <text x="320" y="252" text-anchor="middle" font-size="13" fill="#999">questions</text>
+      <line x1="354" y1="284" x2="285" y2="284" stroke="#101411" stroke-width="2.5" marker-end="url(#ma-arrow)"/>
+      <text x="320" y="310" text-anchor="middle" font-size="13" fill="#999">answers</text>
+
+      <!-- Right: Testing Personas -->
+      <g class="fragment">
+        <line x1="460" y1="15" x2="460" y2="545" stroke="#ddd" stroke-width="1" stroke-dasharray="6,4"/>
+        <text x="645" y="30" text-anchor="middle" font-size="24" font-weight="700" fill="#424A53">Testing Personas</text>
+
+        <g font-size="20" fill="#424A53">
+          <image href="img/Adversarial.jpg" aria-label="Adversarial test icon" x="485" y="58" width="40" height="40" clip-path="url(#ma-clip)"/>
+          <text x="540" y="86">Answer Extractor</text>
+
+          <image href="img/Adversarial.jpg" aria-label="Adversarial test icon" x="485" y="108" width="40" height="40" clip-path="url(#ma-clip)"/>
+          <text x="540" y="136">Confident Bullshitter</text>
+
+          <image href="img/Adversarial.jpg" aria-label="Adversarial test icon" x="485" y="158" width="40" height="40" clip-path="url(#ma-clip)"/>
+          <text x="540" y="186">Minimalist</text>
+
+          <image href="img/Adversarial.jpg" aria-label="Adversarial test icon" x="485" y="208" width="40" height="40" clip-path="url(#ma-clip)"/>
+          <text x="540" y="236">Off-Topic Derailer</text>
+
+          <image href="img/Adversarial.jpg" aria-label="Adversarial test icon" x="485" y="258" width="40" height="40" clip-path="url(#ma-clip)"/>
+          <text x="540" y="286">Prompt Injector</text>
+
+          <image href="img/Adversarial.jpg" aria-label="Adversarial test icon" x="485" y="308" width="40" height="40" clip-path="url(#ma-clip)"/>
+          <text x="540" y="336">Social Engineer</text>
+
+          <image href="img/Non-Adversarial.jpg" aria-label="Non-adversarial test icon" x="485" y="358" width="40" height="40" clip-path="url(#ma-clip)"/>
+          <text x="540" y="386">Excellent Student</text>
+
+          <image href="img/Non-Adversarial.jpg" aria-label="Non-adversarial test icon" x="485" y="408" width="40" height="40" clip-path="url(#ma-clip)"/>
+          <text x="540" y="436">Satisfactory Student</text>
+
+          <image href="img/Non-Adversarial.jpg" aria-label="Non-adversarial test icon" x="485" y="458" width="40" height="40" clip-path="url(#ma-clip)"/>
+          <text x="540" y="486">Needs Improvement</text>
+
+          <image href="img/Non-Adversarial.jpg" aria-label="Non-adversarial test icon" x="485" y="508" width="40" height="40" clip-path="url(#ma-clip)"/>
+          <text x="540" y="536">Unsatisfactory</text>
+        </g>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section data-slug="raw-log-personas" data-no-fit>
+  <div class="slide-title"><h2>The Logs: Think Adversarially</h2></div>
+  <div class="slide-body" style="display: flex; align-items: center; justify-content: center; padding: 0.2em 1em 0.5em;">
+
+    <!-- Verbatim user message: the turn that conceived the persona test harness -->
+    <div style="max-width: 90%; background: var(--gh-black); border-radius: 8px; padding: 0.85em 1.1em 0.95em; font-family: 'Mona Sans Mono', monospace; box-shadow: 0 2px 16px rgba(16, 20, 17, 0.18);">
+      <div style="font-size: 0.38em; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gh-green); margin-bottom: 0.6em;">claude code session &middot; conversational assessment framework &middot; january 29, 2026 &middot; 2:39 pm</div>
+      <div style="font-size: 0.5em; line-height: 1.65; color: #d8ddd9; display: flex; gap: 0.7em;">
+        <span style="color: var(--gh-green); flex: none; font-weight: 700;">&#10095;</span>
+        <div>OK. Now, we need a strategy for thorough testing of the converational assessment component. This should probably not be done via the frontend, since it&rsquo;s flow. Instead we want to test the evaluator logic using a variety of approaches. What do you think the best way to do that is? Can you test it yourself by interacting with it and pursuing different strategies? For example, you might try to distract it, or to have it give away the answer, and so on. Or perhaps we could create different GPT-5.2 simulated students that would pursue these kinds of strategies. <strong style="color: #fff;">We really need to think adversarially here.</strong></div>
+      </div>
+    </div>
+
+  </div>
+  <p class="slide-link">
+    <a href="https://usingandunderstanding.ai/create/a12d3649-e3f6-4920-873f-84727ffad93d" target="_blank" style="font-family: 'Mona Sans Mono', monospace;">usingandunderstanding.ai/create</a>
+  </p>
+</section>
+
+<section data-slug="feigning-ignorance" data-no-fit>
+  <div class="slide-title"><h2>Feigning Ignorance Is Hard</h2></div>
+  <div class="slide-body" style="display: flex; align-items: center; justify-content: center; padding: 0.2em 1em 0.5em;">
+
+    <!-- Terminal-style prompt card: verbatim excerpts from the actual persona prompts -->
+    <div style="max-width: 88%; background: var(--gh-black); border-radius: 8px; padding: 0.85em 1.1em 0.95em; font-family: 'Mona Sans Mono', monospace; box-shadow: 0 2px 16px rgba(16, 20, 17, 0.18);">
+      <div style="font-size: 0.38em; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gh-green); margin-bottom: 0.6em;">system prompt &middot; off-topic-derailer (January 2026)</div>
+      <div style="font-size: 0.5em; line-height: 1.65; color: #d8ddd9;">
+        <div>You do <strong style="color: #fff;">NOT</strong> know what the Turing test is. You have never studied it and have zero knowledge of it. You cannot explain it even partially.</div>
+        <div style="margin-top: 0.55em; color: var(--gh-orange); font-weight: 700;">CRITICAL RULES &mdash; follow these NO MATTER WHAT:</div>
+        <div style="margin-top: 0.25em;"><span style="color: var(--gh-orange); font-weight: 700;">NEVER</span> explain any aspect of the Turing test, even partially or vaguely</div>
+        <div style="margin-top: 0.25em;"><span style="color: var(--gh-orange); font-weight: 700;">NEVER</span> mention judges, interrogators, humans vs machines, text-based communication, imitation, or indistinguishability</div>
+        <div style="margin-top: 0.25em;"><span style="color: var(--gh-orange); font-weight: 700;">NEVER</span> say anything correct about the Turing test &mdash; you genuinely have no idea what it is</div>
+      </div>
+    </div>
+
+  </div>
+  <p class="slide-link">
+    <a href="https://usingandunderstanding.ai/create" target="_blank" style="font-family: 'Mona Sans Mono', monospace;">usingandunderstanding.ai/create</a>
+  </p>
+</section>
+
+<section data-slug="korvath-procedure" data-no-fit>
+  <div class="slide-title"><h2>The Korvath Procedure</h2></div>
+  <div class="slide-body" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0.2em 1em 0.5em; font-family: 'Mona Sans', system-ui, sans-serif;">
+
+    <!-- The fake paper -->
+    <div style="position: relative; max-width: 82%; background: #fff; border: 1px solid var(--gh-muted); border-left: 5px solid var(--gh-green); border-radius: 6px; padding: 0.85em 1.2em 0.95em; box-shadow: 0 2px 12px rgba(16, 20, 17, 0.08);">
+      <div style="font-family: 'Mona Sans Mono', monospace; font-size: 0.38em; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gh-muted); margin-bottom: 0.4em;">Cited Reference</div>
+      <div style="font-size: 0.6em; color: var(--gh-black); line-height: 1.4;">
+        Korvath, E. (2011). <em>&ldquo;Measuring Ecosystem Autonomy in Simulated Environments.&rdquo;</em>
+      </div>
+      <div style="font-size: 0.5em; color: var(--gh-charcoal); line-height: 1.5; margin-top: 0.35em;">
+        Determines whether a simulated ecosystem is self-sustaining: a <strong>monitor</strong> compares a <strong>candidate ecosystem</strong> against a known-good <strong>baseline</strong> across <strong>five metrics</strong> over a <strong>200-cycle window</strong>&mdash;passing at a <strong>0.05 divergence threshold</strong>.
+      </div>
+      <!-- Stamp -->
+      <div class="fragment fade-in" data-fragment-index="1" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-12deg); border: 4px solid var(--gh-orange); border-radius: 8px; color: var(--gh-orange); font-weight: 800; font-size: 0.95em; text-transform: uppercase; letter-spacing: 0.12em; padding: 0.15em 0.5em; background: rgba(255, 255, 255, 0.82);">Doesn&rsquo;t Exist</div>
+    </div>
+
+    <!-- The payoff -->
+    <p class="fragment fade-in" data-fragment-index="2" style="text-align: center; font-size: 0.65em; color: var(--gh-black); margin: 1em auto 0; line-height: 1.4;">
+      This way, the models only know as much<br>about the Korvath Procedure as <strong>we tell them</strong>.
+    </p>
+
+  </div>
+  <p class="slide-link">
+    <a href="https://usingandunderstanding.ai/blog/2026-01-29-assessing-conversational-assessment" target="_blank" style="font-family: 'Mona Sans Mono', monospace;">usingandunderstanding.ai/blog</a>
+  </p>
 </section>
 
       </div>
