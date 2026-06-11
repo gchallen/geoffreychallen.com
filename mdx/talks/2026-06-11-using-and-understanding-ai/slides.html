@@ -1440,6 +1440,202 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
 
 </section>
 
+<section data-slug="acknowledgements" data-no-fit>
+  <style>
+    .ack-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: 0.8em;
+      row-gap: 0.7em;
+      width: 100%;
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+    a.ack-credit {
+      display: flex;
+      align-items: center;
+      gap: 0.55em;
+      min-width: 0;
+      color: inherit;
+      border-bottom: none;
+      transition: color 0.15s ease;
+    }
+    .ack-face {
+      flex: 0 0 auto;
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      border: 3px solid var(--gh-green);
+      background: var(--gh-canvas);
+      overflow: hidden;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    a.ack-credit:hover .ack-face {
+      border-color: var(--gh-black);
+      box-shadow: 0 0 0 3px rgba(15, 191, 62, 0.2);
+    }
+    .ack-face img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 25%;
+      display: block;
+      margin: 0;
+    }
+    .ack-meta { min-width: 0; line-height: 1.25; font-family: 'Mona Sans', system-ui, sans-serif; }
+    .ack-name {
+      font-size: 0.55em;
+      color: var(--gh-black);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .ack-affil {
+      font-size: 0.45em;
+      color: var(--gh-charcoal);
+    }
+  </style>
+  <div class="slide-title"><h2>In Collaboration With</h2></div>
+  <div class="slide-body" style="display: flex; align-items: center; justify-content: center; padding: 0.2em 1em 0.5em;">
+    <div class="ack-grid">
+      <a class="ack-credit" href="https://www.linkedin.com/in/brmiddle/" target="_blank" rel="noopener">
+        <div class="ack-face"><img src="img/credits/middleton.jpg" alt="Brandon Middleton"></div>
+        <div class="ack-meta"><div class="ack-name">Brandon Middleton</div><div class="ack-affil">Replit</div></div>
+      </a>
+      <a class="ack-credit" href="https://www.cs.ubc.ca/people/cinda-heeren" target="_blank" rel="noopener">
+        <div class="ack-face"><img src="img/credits/heeren.jpg" alt="Cinda Heeren"></div>
+        <div class="ack-meta"><div class="ack-name">Cinda Heeren</div><div class="ack-affil">UBC</div></div>
+      </a>
+      <a class="ack-credit" href="https://corygwin.com/" target="_blank" rel="noopener">
+        <div class="ack-face"><img src="img/credits/gwin.png" alt="Cory Gwin"></div>
+        <div class="ack-meta"><div class="ack-name">Cory Gwin</div><div class="ack-affil">GitHub</div></div>
+      </a>
+      <a class="ack-credit" href="https://siebelschool.illinois.edu/about/people/faculty/shaffer1" target="_blank" rel="noopener">
+        <div class="ack-face"><img src="img/credits/shaffer.jpg" alt="Eric Shaffer"></div>
+        <div class="ack-meta"><div class="ack-name">Eric Shaffer</div><div class="ack-affil">Illinois</div></div>
+      </a>
+      <a class="ack-credit" href="https://siebelschool.illinois.edu/about/people/faculty/pitt" target="_blank" rel="noopener">
+        <div class="ack-face"><img src="img/credits/pitt.jpg" alt="Lenny Pitt"></div>
+        <div class="ack-meta"><div class="ack-name">Lenny Pitt</div><div class="ack-affil">Illinois</div></div>
+      </a>
+      <a class="ack-credit" href="https://github.com/nickdirienzo" target="_blank" rel="noopener">
+        <div class="ack-face"><img src="img/credits/dirienzo.png" alt="Nick DiRienzo"></div>
+        <div class="ack-meta"><div class="ack-name">Nick DiRienzo</div><div class="ack-affil">Optimizely</div></div>
+      </a>
+      <a class="ack-credit" href="https://siebelschool.illinois.edu/about/people/staff/smherzog" target="_blank" rel="noopener">
+        <div class="ack-face"><img src="img/credits/herzog.jpg" alt="Steve Herzog"></div>
+        <div class="ack-meta"><div class="ack-name">Steve Herzog</div><div class="ack-affil">Illinois</div></div>
+      </a>
+      <a class="ack-credit" href="https://siebelschool.illinois.edu/about/people/faculty/ygertner" target="_blank" rel="noopener">
+        <div class="ack-face"><img src="img/credits/gertner.jpg" alt="Yael Gertner"></div>
+        <div class="ack-meta"><div class="ack-name">Yael Gertner</div><div class="ack-affil">Illinois</div></div>
+      </a>
+      <a class="ack-credit" href="https://philosophy.illinois.edu/directory/profile/zbiondi" target="_blank" rel="noopener">
+        <div class="ack-face"><img src="img/credits/biondi.jpg" alt="Zach Biondi"></div>
+        <div class="ack-meta"><div class="ack-name">Zach Biondi</div><div class="ack-affil">Illinois</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section data-slug="healing-agents" data-no-fit>
+  <div class="slide-title"><h2>Twenty-Five Years of Code</h2></div>
+  <div class="slide-body" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0.2em 1em 0.5em; font-family: 'Mona Sans', system-ui, sans-serif;">
+
+    <!-- Activity ribbon: 1999 → mid-2025 by hand (blue), then by
+         conversation (orange, accelerating off the right edge).
+         Density is impressionistic, informed by real GitHub history
+         (4-of-5 days committing since 2017). Squares are drawn by the
+         inline script below with a seeded PRNG so the pattern is
+         stable across reloads. -->
+    <svg id="ha-ribbon" viewBox="0 0 960 320" style="width: 100%; max-width: 1050px;">
+      <!-- year axis -->
+      <g font-family="'Mona Sans Mono', monospace" font-size="15" fill="var(--gh-muted)" text-anchor="middle">
+        <text x="48"  y="222">1999</text>
+        <text x="244" y="222">2005</text>
+        <text x="406" y="222">2010</text>
+        <text x="569" y="222">2015</text>
+        <text x="732" y="222">2020</text>
+        <text x="928" y="222">2026</text>
+      </g>
+
+      <!-- squares drawn here by script: hand-written era -->
+      <g id="ha-hand"></g>
+
+      <!-- break marker + agentic era reveal together -->
+      <g class="fragment" data-fragment-index="1">
+        <line x1="911" y1="96" x2="911" y2="196" stroke="var(--gh-green)" stroke-width="2.5" stroke-dasharray="6,4"/>
+        <text x="911" y="80" text-anchor="middle" font-family="'Mona Sans', system-ui, sans-serif" font-size="16" font-weight="700" fill="var(--gh-green-dark)">July 2025</text>
+        <g id="ha-agent"></g>
+        <!-- arrow implying the new era continues off-slide -->
+        <polygon points="946,138 946,158 960,148" fill="var(--gh-green)"/>
+      </g>
+    </svg>
+
+    <!-- captions -->
+    <div style="text-align: center; max-width: 92%; margin-top: 0.3em;">
+      <div style="font-size: 0.62em; color: var(--gh-black); line-height: 1.4;">
+        Four days out of five, for twenty-five years:<br><strong>writing code by hand</strong> to realize my educational visions.
+      </div>
+      <div class="fragment" data-fragment-index="1" style="font-size: 0.62em; color: var(--gh-black); line-height: 1.4; margin-top: 0.3em;">
+        Since 2026 I no longer read, write, or debug code by hand&mdash;<br><strong style="color: var(--gh-green-dark);">and I&rsquo;m building more than ever</strong>.
+      </div>
+    </div>
+
+  </div>
+  <p class="slide-link">
+    <a href="https://www.geoffreychallen.com/essays/2026-04-10-healing-agents" target="_blank" style="font-family: 'Mona Sans Mono', monospace;">geoffreychallen.com/essays/healing-agents</a>
+  </p>
+  <script>
+    window.addEventListener('load', function() {
+      // Deterministic PRNG so the ribbon is identical on every load.
+      function mulberry32(a) {
+        return function() {
+          a |= 0; a = (a + 0x6D2B79F5) | 0;
+          var t = Math.imul(a ^ (a >>> 15), 1 | a);
+          t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+          return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+        };
+      }
+      var rand = mulberry32(124);
+
+      var X0 = 48, X1 = 944, Y0 = 100;          // ribbon bounds
+      var SIZE = 6.4, GAP = 2.2, ROWS = 10;     // square grid
+      var COLS = Math.floor((X1 - X0) / (SIZE + GAP));
+      var yearAt = function(col) { return 1999 + (col / COLS) * 27.5; };
+
+      // Density by era — impressionistic, shaped by real GitHub history
+      // (heaviest 2017-2021, never below "most days").
+      function density(year) {
+        if (year < 2017) return 0.62;
+        if (year < 2019) return 0.85;
+        if (year < 2022) return 0.78;
+        if (year < 2025.5) return 0.70;
+        return 0.92;                            // agentic era: more than ever
+      }
+
+      var hand = document.getElementById('ha-hand');
+      var agent = document.getElementById('ha-agent');
+      var BREAK = 2025.5;
+      for (var c = 0; c < COLS; c++) {
+        var year = yearAt(c);
+        var agentic = year >= BREAK;
+        for (var r = 0; r < ROWS; r++) {
+          if (rand() > density(year)) continue;
+          var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+          rect.setAttribute('x', X0 + c * (SIZE + GAP));
+          rect.setAttribute('y', Y0 + r * (SIZE + GAP));
+          rect.setAttribute('width', SIZE);
+          rect.setAttribute('height', SIZE);
+          rect.setAttribute('rx', 1.2);
+          rect.setAttribute('fill', agentic ? 'var(--gh-green)' : 'var(--gh-black)');
+          rect.setAttribute('opacity', (0.45 + rand() * 0.55).toFixed(2));
+          (agentic ? agent : hand).appendChild(rect);
+        }
+      }
+    });
+  </script>
+</section>
+
 <section data-slug="educators-building" class="image-bleed-slide with-top-fade" data-no-fit
   data-background-image="img/educators-building.jpg"
   data-background-size="cover"
@@ -2759,7 +2955,7 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
         }
       });
     </script>
-  <script>var slideNotes = {"title":["Welcome — and thank GitHub Education for three great days.","~10 minutes: one course, end to end. Using and Understanding AI — an AI course for everyone, co-created and co-taught with AI.","Three beats: the course, the collaboration, the assessment."],"educators-building":["One image, two scripts. Summit: \"You're doing this.\" Workshop: \"You could be.\"","Introduce the experiment: one course — Using and Understanding AI — built and taught with AI agents, by an educator, this spring.","The clarion call: the new computing gets built by educators who engage with these tools. Barn-raising, not disruption — there's room to join."],"uai-goals":["A course for non-technical students. No prerequisites. No prior experience. No code.","Two pedagogical goals: build working mental models of how AI systems actually work, and develop the judgment to use them well.","Practical understanding, not building AI from scratch.","Syllabus is linked at the bottom of the slide."],"uai-collaborator":["Title is a play on \"Dog is my co-pilot.\"","AI as a full co-instructor. Three roles: content, infrastructure, operations.","The professor commands many agents and is freed to be present with students."],"uai-created":["No code was manually read, written, or debugged. Every feature was built by describing it to Claude in plain language.","199 sessions · 68 days · 4,038 turns · 29,770 tool calls.","The /create page (linked at bottom) is itself a writeup of how the site was built."],"uai-meetings":["Lesson types: lectures, workshops, labs, discussions — each with its own pedagogical shape.","Hover any card for the full meeting list."],"inductive-exploration":["A digit-recognition network the audience can train in the browser.","The pedagogy: build intuition through play before naming the mechanism."],"inductive-exploration-neuron":["Zoom in from the network to a single neuron — weights, bias, activation, all manipulable.","Same pedagogy: play first, name the mechanism after.","Built in the same March 9 session as the digit network."],"raw-log-debugging":["Three verbatim messages from the evening the demos were built (Mar 9) — typos and all.","This is what \"no code\" debugging looks like: describe what you see, in plain language.","The 7:29 question is the punchline — the professor is *learning the material* by building the demo."],"uai-prep":["Before class: an AI study partner helps every student arrive prepared.","During class: in-class agents facilitate small-group conversation without dominating.","The professor is no longer the only knowledgeable adult in the room."],"raw-log-assessment":["Verbatim (excerpted) — the message that conceived conversational assessment (Jan 29, 1:27 PM). Typo preserved (\"framemwork\").","The two-agent split — interviewer + hidden evaluator — is right there in the first ask.","Note the shape: name the idea, sketch the roles, give one concrete example (the Turing Test — which pays off two slides from now).","Timeline kicker: conceived 1:27 PM, implementation started 2:07, \"think adversarially\" at 2:39. One afternoon."],"uai-assessment-demo":["Conversational oral assessment — student walks through the system with an AI evaluator.","Same skills the field will reward in five years, available week one."],"autograde-everything":["The conversational + multi-agent pattern isn't specific to oral exams.","Anywhere we have a slow human feedback loop, the same recipe applies: an evaluator agent scored against a rubric.","Code, prose, problem-solving, design choices, the messy human stuff — all newly autogradable.","Click to compress the bar: one slow loop becomes many fast loops.","Feedback value falls off a cliff with delay. Fast loops keep students inside the window where feedback still matters."],"cbtf":["Same testing facility, different kind of assessment.","Conversational assessment lives in the CBTF — proctored, scored, real.","The future of assessment is here, not in Canvas."],"uai-multi-agent":["Now the validation: how do we know any of this works?","The architecture: evaluator agent + rubric, scored against a structured protocol.","Conversational, but the scoring is rigorous.","Validated against adversarial personas. Hardest to defeat was the confident bullshitter."],"raw-log-personas":["Verbatim — the message that conceived the persona harness (Jan 29, 2:39 PM). Typos preserved (\"converational\", \"since it's flow\").","Note the shape: state the problem, ask Claude what it thinks, float two options. The harness came back the same afternoon.","\"We really need to think adversarially here\" — the line the whole validation story hangs on."],"feigning-ignorance":["Walk through what happened: testing the grader needs fake students who *don't know things*; the first harness used the Turing Test — a real topic.","These are the verbatim persona prompts (from git history) — and they got desperate: NEVER, NEVER, NEVER.","It leaked anyway. The model knows the Turing Test; the Confident Bullshitter kept accidentally telling the truth. You can't prompt away knowledge."],"korvath-procedure":["The fix: invent knowledge that doesn't exist. Dr. Elena Korvath, 2011, \"Measuring Ecosystem Autonomy in Simulated Environments\" — monitor, baseline, candidate, five metrics, 200-cycle window, 0.05 threshold.","Reveal 1: the stamp — it doesn't exist. No author, no paper, no training data. (Tell the room: don't bother looking it up.)","Reveal 2: this way the models only know as much about Korvath as we tell them. Full spec → E; gaps → N; nothing → U. The harness measures the pipeline, not the model's trivia.","Marked testing:true so students never see it."],"final-project":["The setup: students could continue *any* AI project they'd started during the semester — completely their choice.","The telling part: every single one chose to keep building with Replit. Conversational building won on revealed preference, not assignment.","Three in-class build sessions; purely conversational — no code read, written, or debugged. The same way the course site itself was built.","Capped with a video walkthrough (what you built, who it's for, what was hard, what surprised you) in a public showcase — 8 projects this spring.","Transition: \"so what did they actually build?\""],"uai-final-projects":["What the Using and Understanding AI students built for their final projects.","The range tells you what \"non-CS students with AI\" looks like — one student replaced apps her sorority pays for; another, an aquascaper, built a tracker for tanks, livestock, plants, water chemistry, and maintenance."],"the-bet":["Reveals: click 1 = *Stacked*; click 2 = *Independent, but related* + the statement.","The claim: AI collaboration is its own skill—neither CS 124 nor UAI needed code-first.","Honest bit: every \"foundations-first\" result was measured on code-first students. No one's run the other arm—I want to.","Beginners not reading the AI's code is a *start*, not a disqualification. (Essay: \"Another Skill\".)"],"conversational-programming":["Fall 2026 launch: a new course built around conversation as the programming interface.","*\"If you can talk it, you can create it.\"* — Conversational Programming Manifesto (linked).","UAI is the existence proof; Conversational Programming is the next step."],"discussion":["Recap the three beats — the course, the collaboration, the assessment — plus what's next.","Everything is open: usingandunderstanding.ai/educators.","Thank **Cory**, **Morgan**, and **Leo Porter**, and the educators in the room — three great days together."]};</script>
+  <script>var slideNotes = {"title":["Welcome — and thank GitHub Education for three great days.","~10 minutes: one course, end to end. Using and Understanding AI — an AI course for everyone, co-created and co-taught with AI.","Three beats: the course, the collaboration, the assessment."],"acknowledgements":["The nine collaborators from the original talk's Courses section — carried over so the summary deck doesn't lose the credits.","Brandon Middleton (Replit), Cinda Heeren (UBC), Cory Gwin (GitHub), Eric Shaffer, Lenny Pitt, Steve Herzog, Yael Gertner, Zach Biondi (Illinois), Nick DiRienzo (Optimizely).","Quick beat: none of this was built alone."],"healing-agents":["My background: writing code since 1999 — four days out of five (real GitHub history) — to realize my educational visions.","It's hard, and unpleasant. That may be why many educators don't build using the same technology we tell students can change the world. I understand the barrier.","Reveal: July 2025, Claude Code. Since 2026 I no longer read, write, or debug code by hand — and I'm building more than ever.","The barrier is gone. All educators can build. (Essay: Healing Agents.)","Transition: \"so here's what that makes possible →\" (educators-building)."],"educators-building":["One image, two scripts. Summit: \"You're doing this.\" Workshop: \"You could be.\"","Introduce the experiment: one course — Using and Understanding AI — built and taught with AI agents, by an educator, this spring.","The clarion call: the new computing gets built by educators who engage with these tools. Barn-raising, not disruption — there's room to join."],"uai-goals":["A course for non-technical students. No prerequisites. No prior experience. No code.","Two pedagogical goals: build working mental models of how AI systems actually work, and develop the judgment to use them well.","Practical understanding, not building AI from scratch.","Syllabus is linked at the bottom of the slide."],"uai-collaborator":["Title is a play on \"Dog is my co-pilot.\"","AI as a full co-instructor. Three roles: content, infrastructure, operations.","The professor commands many agents and is freed to be present with students."],"uai-created":["No code was manually read, written, or debugged. Every feature was built by describing it to Claude in plain language.","199 sessions · 68 days · 4,038 turns · 29,770 tool calls.","The /create page (linked at bottom) is itself a writeup of how the site was built."],"uai-meetings":["Lesson types: lectures, workshops, labs, discussions — each with its own pedagogical shape.","Hover any card for the full meeting list."],"inductive-exploration":["A digit-recognition network the audience can train in the browser.","The pedagogy: build intuition through play before naming the mechanism."],"inductive-exploration-neuron":["Zoom in from the network to a single neuron — weights, bias, activation, all manipulable.","Same pedagogy: play first, name the mechanism after.","Built in the same March 9 session as the digit network."],"raw-log-debugging":["Three verbatim messages from the evening the demos were built (Mar 9) — typos and all.","This is what \"no code\" debugging looks like: describe what you see, in plain language.","The 7:29 question is the punchline — the professor is *learning the material* by building the demo."],"uai-prep":["Before class: an AI study partner helps every student arrive prepared.","During class: in-class agents facilitate small-group conversation without dominating.","The professor is no longer the only knowledgeable adult in the room."],"raw-log-assessment":["Verbatim (excerpted) — the message that conceived conversational assessment (Jan 29, 1:27 PM). Typo preserved (\"framemwork\").","The two-agent split — interviewer + hidden evaluator — is right there in the first ask.","Note the shape: name the idea, sketch the roles, give one concrete example (the Turing Test — which pays off two slides from now).","Timeline kicker: conceived 1:27 PM, implementation started 2:07, \"think adversarially\" at 2:39. One afternoon."],"uai-assessment-demo":["Conversational oral assessment — student walks through the system with an AI evaluator.","Same skills the field will reward in five years, available week one."],"autograde-everything":["The conversational + multi-agent pattern isn't specific to oral exams.","Anywhere we have a slow human feedback loop, the same recipe applies: an evaluator agent scored against a rubric.","Code, prose, problem-solving, design choices, the messy human stuff — all newly autogradable.","Click to compress the bar: one slow loop becomes many fast loops.","Feedback value falls off a cliff with delay. Fast loops keep students inside the window where feedback still matters."],"cbtf":["Same testing facility, different kind of assessment.","Conversational assessment lives in the CBTF — proctored, scored, real.","The future of assessment is here, not in Canvas."],"uai-multi-agent":["Now the validation: how do we know any of this works?","The architecture: evaluator agent + rubric, scored against a structured protocol.","Conversational, but the scoring is rigorous.","Validated against adversarial personas. Hardest to defeat was the confident bullshitter."],"raw-log-personas":["Verbatim — the message that conceived the persona harness (Jan 29, 2:39 PM). Typos preserved (\"converational\", \"since it's flow\").","Note the shape: state the problem, ask Claude what it thinks, float two options. The harness came back the same afternoon.","\"We really need to think adversarially here\" — the line the whole validation story hangs on."],"feigning-ignorance":["Walk through what happened: testing the grader needs fake students who *don't know things*; the first harness used the Turing Test — a real topic.","These are the verbatim persona prompts (from git history) — and they got desperate: NEVER, NEVER, NEVER.","It leaked anyway. The model knows the Turing Test; the Confident Bullshitter kept accidentally telling the truth. You can't prompt away knowledge."],"korvath-procedure":["The fix: invent knowledge that doesn't exist. Dr. Elena Korvath, 2011, \"Measuring Ecosystem Autonomy in Simulated Environments\" — monitor, baseline, candidate, five metrics, 200-cycle window, 0.05 threshold.","Reveal 1: the stamp — it doesn't exist. No author, no paper, no training data. (Tell the room: don't bother looking it up.)","Reveal 2: this way the models only know as much about Korvath as we tell them. Full spec → E; gaps → N; nothing → U. The harness measures the pipeline, not the model's trivia.","Marked testing:true so students never see it."],"final-project":["The setup: students could continue *any* AI project they'd started during the semester — completely their choice.","The telling part: every single one chose to keep building with Replit. Conversational building won on revealed preference, not assignment.","Three in-class build sessions; purely conversational — no code read, written, or debugged. The same way the course site itself was built.","Capped with a video walkthrough (what you built, who it's for, what was hard, what surprised you) in a public showcase — 8 projects this spring.","Transition: \"so what did they actually build?\""],"uai-final-projects":["What the Using and Understanding AI students built for their final projects.","The range tells you what \"non-CS students with AI\" looks like — one student replaced apps her sorority pays for; another, an aquascaper, built a tracker for tanks, livestock, plants, water chemistry, and maintenance."],"the-bet":["Reveals: click 1 = *Stacked*; click 2 = *Independent, but related* + the statement.","The claim: AI collaboration is its own skill—neither CS 124 nor UAI needed code-first.","Honest bit: every \"foundations-first\" result was measured on code-first students. No one's run the other arm—I want to.","Beginners not reading the AI's code is a *start*, not a disqualification. (Essay: \"Another Skill\".)"],"conversational-programming":["Fall 2026 launch: a new course built around conversation as the programming interface.","*\"If you can talk it, you can create it.\"* — Conversational Programming Manifesto (linked).","UAI is the existence proof; Conversational Programming is the next step."],"discussion":["Recap the three beats — the course, the collaboration, the assessment — plus what's next.","Everything is open: usingandunderstanding.ai/educators.","Thank **Cory**, **Morgan**, and **Leo Porter**, and the educators in the room — three great days together."]};</script>
 <style>
   .video-wrap { position: relative; display: inline-block; }
   .video-wrap video { display: block; }
