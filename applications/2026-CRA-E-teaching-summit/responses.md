@@ -57,7 +57,7 @@ Teaching Professor
 
 ⦿ PhD
 
-**If "Other," please explain:** *(leave blank)*
+**If "Other," please explain:** _(leave blank)_
 
 **Year you earned your highest degree**
 
