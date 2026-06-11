@@ -12,16 +12,16 @@
     "count": 11
   },
   {
+    "topic": "AI in education",
+    "count": 7
+  },
+  {
     "topic": "assessment",
     "count": 7
   },
   {
     "topic": "personal",
     "count": 7
-  },
-  {
-    "topic": "AI in education",
-    "count": 6
   },
   {
     "topic": "autograding",
@@ -53,6 +53,14 @@
   },
   {
     "topic": "career advice",
+    "count": 3
+  },
+  {
+    "topic": "conversational programming",
+    "count": 3
+  },
+  {
+    "topic": "course design",
     "count": 3
   },
   {
@@ -96,15 +104,7 @@
     "count": 2
   },
   {
-    "topic": "conversational programming",
-    "count": 2
-  },
-  {
     "topic": "course community",
-    "count": 2
-  },
-  {
-    "topic": "course design",
     "count": 2
   },
   {
@@ -152,6 +152,10 @@
     "count": 2
   },
   {
+    "topic": "AI literacy",
+    "count": 1
+  },
+  {
     "topic": "Android",
     "count": 1
   },
@@ -185,6 +189,10 @@
   },
   {
     "topic": "computerized testing",
+    "count": 1
+  },
+  {
+    "topic": "conversational assessment",
     "count": 1
   },
   {
