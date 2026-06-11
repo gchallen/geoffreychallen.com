@@ -434,6 +434,24 @@
   let mediaRecorder = null;
   let audioChunks = [];
   let sectionTimes = []; // actual seconds per section
+
+  // Per-slide timing. Keyed by "h.v" slide indices; revisits accumulate
+  // into the same entry. Recorded in first-visit order for the YAML export.
+  let slideTimes = [];      // [{num, title, sec}]
+  let slideKeyToIdx = {};   // "h.v" -> index into slideTimes
+  let curSlideKey = null;   // slide currently on screen
+  let curSlideMeta = null;  // {num, title} for the slide being timed
+  let slideStartTime = 0;
+
+  function accumulateSlideTime(key, meta, sec) {
+    let idx = slideKeyToIdx[key];
+    if (idx === undefined) {
+      idx = slideTimes.length;
+      slideKeyToIdx[key] = idx;
+      slideTimes.push({ num: (meta && meta.num) || 0, title: (meta && meta.title) || '', sec: 0 });
+    }
+    slideTimes[idx].sec += sec;
+  }
   let state = 'WAITING'; // WAITING | PRESENTING | RECORDING | DONE
   let connected = false;
 
@@ -588,6 +606,21 @@
     currentSlideH = indexh;
     currentSlideV = indexv;
 
+    // Per-slide timing: fragment broadcasts share the slide key, so only
+    // genuine slide changes accumulate. The broadcast handler updates
+    // broadcastCurrentSlide/broadcastTitle before calling us, so they
+    // describe the NEW slide; elapsed time belongs to the previous one.
+    const slideKey = indexh + '.' + indexv;
+    if (slideKey !== curSlideKey) {
+      const slideNow = Date.now();
+      if ((state === 'PRESENTING' || state === 'RECORDING') && curSlideKey !== null) {
+        accumulateSlideTime(curSlideKey, curSlideMeta, (slideNow - slideStartTime) / 1000);
+      }
+      curSlideKey = slideKey;
+      curSlideMeta = { num: broadcastCurrentSlide, title: broadcastTitle };
+      slideStartTime = slideNow;
+    }
+
     const newSectionIndex = broadcastSectionIndex;
 
     // If section changed and we're timing, accumulate the section time
@@ -610,6 +643,10 @@
     totalStartTime = Date.now();
     sectionStartTime = Date.now();
     sectionTimes = new Array(sections.length).fill(0);
+    slideTimes = [];
+    slideKeyToIdx = {};
+    slideStartTime = Date.now();
+    curSlideMeta = { num: broadcastCurrentSlide, title: broadcastTitle };
     timerInterval = setInterval(updateTimers, 100);
     updateTimers();
   }
@@ -619,6 +656,10 @@
     totalStartTime = Date.now();
     sectionStartTime = Date.now();
     sectionTimes = new Array(sections.length).fill(0);
+    slideTimes = [];
+    slideKeyToIdx = {};
+    slideStartTime = Date.now();
+    curSlideMeta = { num: broadcastCurrentSlide, title: broadcastTitle };
     audioChunks = [];
 
     // Start recording
@@ -657,6 +698,12 @@
     const now = Date.now();
     const sessionElapsed = (now - sectionStartTime) / 1000;
     sectionTimes[currentSectionIndex] = (sectionTimes[currentSectionIndex] || 0) + sessionElapsed;
+
+    // Accumulate time on the final slide
+    if (curSlideKey !== null) {
+      accumulateSlideTime(curSlideKey, curSlideMeta, (now - slideStartTime) / 1000);
+      slideStartTime = now;
+    }
 
     state = 'DONE';
     clearInterval(timerInterval);
@@ -784,12 +831,20 @@
         `    target_sec: ${sec.targetSec}\n` +
         `    diff_sec: ${diff}\n`;
     }
+    let yamlSlides = '';
+    for (const s of slideTimes) {
+      yamlSlides +=
+        `  - num: ${s.num}\n` +
+        `    title: "${(s.title || '').replace(/"/g, '\\"')}"\n` +
+        `    actual_sec: ${Math.round(s.sec)}\n`;
+    }
     return (
       `date: "${stamp.replace('_', 'T')}"\n` +
       `total_actual_sec: ${totalActual}\n` +
       `total_target_sec: ${totalTarget}\n` +
       `sections:\n` +
-      yamlSections
+      yamlSections +
+      (yamlSlides ? `slides:\n${yamlSlides}` : '')
     );
   }
 
